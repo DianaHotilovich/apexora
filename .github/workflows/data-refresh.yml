@@ -22,4 +22,5 @@ jobs:
       - name: Report links that stopped working
         if: steps.check.outputs.broken != '0'
         env: { GH_TOKEN: '${{ github.token }}' }
-        run: gh issue create --title "Data check: some offer links stopped working" --body-file data-report.md
+        run: |
+          gh issue create --title "Data check - some offer links stopped working" --body-file data-report.md
