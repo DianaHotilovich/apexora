@@ -69,6 +69,7 @@ export default function Home() {
           <Link href="/currency/" className="btn link">{t.converter}</Link>
         </div>
         <Link href="/waitlist/" className="btn link">{t.waitlist}</Link>
+        <Link href="/privacy/" className="foot" style={{ textAlign: 'center' }}>{t.privacy}</Link>
       </div>
     </main>
   );
