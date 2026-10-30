@@ -1,11 +1,11 @@
 import { BadRequestException, Body, ConflictException, Controller, Get, HttpCode, NotFoundException, Param, Post, Query } from '@nestjs/common';
-import { eq } from 'drizzle-orm';
+import { and, eq } from 'drizzle-orm';
 import { z, ZodSchema } from 'zod';
 import {
   checklistFor, getGuide, getRace, GUIDES, Lang, Level, MissingRateError, OFFERS, offersForRace, RACES,
   suggestTrip, summarizeTrip,
 } from '@gridtrip/shared';
-import { Db, payments, trips, waitlist } from './db';
+import { Db, payments, raceAlerts, trips, waitlist } from './db';
 import { methodsFor, PaymentsService } from './payments.service';
 import { RatesService } from './rates.service';
 
@@ -165,5 +165,22 @@ export class WaitlistController {
   async count() {
     const rows = await this.db.orm.select().from(waitlist);
     return { count: rows.length };
+  }
+}
+
+@Controller('race-alerts')
+export class RaceAlertsController {
+  constructor(private readonly db: Db) {}
+
+  /** Sign up for one e-mail when ticket sales or GridTrip packages open for a race. */
+  @Post()
+  async create(@Body() body: unknown) {
+    const b = parse(z.object({ email: z.string().email().max(200), raceId: z.string().max(64), language: z.enum(['pl', 'en']).default('pl') }), body);
+    if (!getRace(b.raceId)) throw new NotFoundException('Unknown race');
+    const email = b.email.trim().toLowerCase();
+    const existing = await this.db.orm.select().from(raceAlerts).where(and(eq(raceAlerts.email, email), eq(raceAlerts.raceId, b.raceId)));
+    if (existing.length) throw new ConflictException('Already subscribed to this race');
+    await this.db.orm.insert(raceAlerts).values({ email, raceId: b.raceId, language: b.language });
+    return { ok: true };
   }
 }

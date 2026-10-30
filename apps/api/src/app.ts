@@ -2,14 +2,14 @@ import 'reflect-metadata';
 import { Module } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import {
-  GuidesController, HealthController, PaymentsController, RacesController, RatesController, TripsController, WaitlistController,
+  GuidesController, HealthController, PaymentsController, RacesController, RatesController, TripsController, WaitlistController, RaceAlertsController,
 } from './controllers';
 import { Db } from './db';
 import { PaymentsService } from './payments.service';
 import { RatesService } from './rates.service';
 
 @Module({
-  controllers: [HealthController, RacesController, GuidesController, RatesController, TripsController, PaymentsController, WaitlistController],
+  controllers: [HealthController, RacesController, GuidesController, RatesController, TripsController, PaymentsController, WaitlistController, RaceAlertsController],
   providers: [Db, RatesService, PaymentsService],
 })
 export class AppModule {}

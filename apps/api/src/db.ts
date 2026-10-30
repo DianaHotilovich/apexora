@@ -8,6 +8,15 @@ export const waitlist = pgTable('waitlist', {
   createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
 });
 
+/** "Tell me when ticket sales open" alerts for one race. */
+export const raceAlerts = pgTable('race_alerts', {
+  id: uuid('id').primaryKey().defaultRandom(),
+  email: text('email').notNull(),
+  raceId: text('race_id').notNull(),
+  language: text('language').notNull().default('pl'),
+  createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+});
+
 export const trips = pgTable('trips', {
   id: uuid('id').primaryKey().defaultRandom(),
   raceId: text('race_id').notNull(),
@@ -38,6 +47,14 @@ CREATE TABLE IF NOT EXISTS waitlist (
   language text NOT NULL DEFAULT 'pl',
   created_at timestamptz NOT NULL DEFAULT now()
 );
+CREATE TABLE IF NOT EXISTS race_alerts (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  email text NOT NULL,
+  race_id text NOT NULL,
+  language text NOT NULL DEFAULT 'pl',
+  created_at timestamptz NOT NULL DEFAULT now(),
+  UNIQUE (email, race_id)
+);
 CREATE TABLE IF NOT EXISTS trips (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   race_id text NOT NULL,
@@ -60,7 +77,7 @@ CREATE TABLE IF NOT EXISTS payments (
   created_at timestamptz NOT NULL DEFAULT now()
 );`;
 
-const schema = { waitlist, trips, payments };
+const schema = { waitlist, raceAlerts, trips, payments };
 
 /**
  * Database access. Uses a real PostgreSQL server when DATABASE_URL is set,
