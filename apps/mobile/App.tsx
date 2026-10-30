@@ -8,7 +8,7 @@ import { ReactNode, useEffect, useMemo, useState } from 'react';
 import { Linking, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import {
-  airbnbUrl, bookingUrl, checklistFor, convert, daysUntil, defaultStay, DICT, formatMoney, getGuide, getRace, GUIDES, hasRate,
+  airbnbUrl, bookingUrl, checklistFor, convert, fetchLiveRates, daysUntil, defaultStay, DICT, formatMoney, getGuide, getRace, GUIDES, hasRate,
   Lang, Level, methodsFor, nextRace, PaymentMethod, Race, RACES, Rates, RATES_SNAPSHOT, savingsPlan, searchCity, suggestTrip,
   summarizeTrip, TripItem,
 } from '@gridtrip/shared';
@@ -56,9 +56,11 @@ export default function App() {
       setTrip(await store.get<Trip>('trip'));
       const cached = await store.get<Rates>('rates');
       if (cached) setRates(cached);
-      if (API) {
-        try { const r = await (await fetch(`${API}/api/rates`)).json(); setRates(r); store.set('rates', r); } catch { /* offline */ }
-      }
+      // Rates refresh on their own: API if configured, otherwise straight from the ECB feed; the last good rates stay for offline use.
+      try {
+        const r = API ? await (await fetch(`${API}/api/rates`)).json() : { ...(await fetchLiveRates()), live: true };
+        setRates(r); store.set('rates', r);
+      } catch { /* offline: keep cached */ }
     })();
   }, []);
 
