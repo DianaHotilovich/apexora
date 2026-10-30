@@ -89,3 +89,22 @@ export async function joinWaitlist(email: string, lang: Lang): Promise<'joined' 
     throw e;
   }
 }
+
+/** "Tell me when sales open" for one race. Demo mode keeps it in this browser. */
+export async function joinRaceAlert(email: string, raceId: string, lang: Lang): Promise<'joined' | 'already'> {
+  const e = email.trim().toLowerCase();
+  if (DEMO) {
+    const list = load<string[]>('race-alerts') ?? [];
+    const key = `${raceId}:${e}`;
+    if (list.includes(key)) return 'already';
+    save('race-alerts', [...list, key]);
+    return 'joined';
+  }
+  try {
+    await api('/race-alerts', { method: 'POST', body: JSON.stringify({ email: e, raceId, language: lang }) });
+    return 'joined';
+  } catch (err) {
+    if ((err as { status?: number }).status === 409) return 'already';
+    throw err;
+  }
+}

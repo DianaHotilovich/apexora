@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { getGuide, Level, summarizeTrip } from '@gridtrip/shared';
 import { Money, Top, useApp } from '@/components/App';
 import { race, suggest } from '@/lib/data';
+import { RaceAlert } from '@/components/RaceAlert';
 
 const LEVELS: Level[] = ['budget', 'standard', 'premium'];
 
@@ -36,6 +37,7 @@ export default function LevelChoice({ id }: { id: string }) {
           </Link>
         ))}
       </div>
+      {!any && <RaceAlert raceId={id} />}
       <div className="bottom grid2">
         <a className="btn ghost" href={r.officialTicketsUrl} target="_blank" rel="noreferrer">{t.officialTickets}</a>
         <Link className="btn ghost" href={`/guides/${r.countryCode}/`}>{t.guide}</Link>

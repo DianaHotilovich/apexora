@@ -97,3 +97,10 @@ test('waitlist validates and de-duplicates e-mails', async () => {
   const c = await request(http).get('/api/waitlist/count').expect(200);
   assert.equal(c.body.count, 1);
 });
+
+test('race alerts: one sign-up per e-mail and race, unknown races rejected', async () => {
+  await request(http).post('/api/race-alerts').send({ email: 'fan@example.com', raceId: 'australia-2027' }).expect(201);
+  await request(http).post('/api/race-alerts').send({ email: 'FAN@example.com', raceId: 'australia-2027' }).expect(409);
+  await request(http).post('/api/race-alerts').send({ email: 'fan@example.com', raceId: 'japan-2027' }).expect(201);
+  await request(http).post('/api/race-alerts').send({ email: 'fan@example.com', raceId: 'nowhere-2027' }).expect(404);
+});
