@@ -6,9 +6,31 @@
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "backgroundColor": "#12172B",
-    "ios": { "bundleIdentifier": "app.gridtrip", "supportsTablet": false },
-    "android": { "package": "app.gridtrip" },
-    "web": { "bundler": "metro", "output": "single" },
-    "plugins": ["expo-status-bar"]
+    "ios": {
+      "bundleIdentifier": "app.gridtrip",
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "app.gridtrip",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#13233F"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/icon.png"
+    },
+    "plugins": [
+      "expo-status-bar",
+      "expo-font"
+    ],
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#13233F"
+    }
   }
 }
