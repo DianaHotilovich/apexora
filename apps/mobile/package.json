@@ -12,9 +12,13 @@
     "export:web": "expo export --platform web"
   },
   "dependencies": {
+    "@expo-google-fonts/barlow": "^0.4.1",
+    "@expo-google-fonts/barlow-condensed": "^0.4.1",
     "@gridtrip/shared": "file:../../packages/shared",
     "@react-native-async-storage/async-storage": "2.2.0",
     "expo": "~58.0.21",
+    "expo-font": "~58.0.11",
+    "expo-linear-gradient": "~58.0.3",
     "expo-status-bar": "~58.0.4",
     "react": "19.3.0",
     "react-dom": "19.3.0",
