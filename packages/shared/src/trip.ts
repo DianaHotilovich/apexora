@@ -61,3 +61,9 @@ export function daysUntil(dateIso: string, todayIso: string): number {
   const ms = new Date(dateIso + 'T00:00:00Z').getTime() - new Date(todayIso + 'T00:00:00Z').getTime();
   return Math.round(ms / 86_400_000);
 }
+
+/** The next Grand Prix to recommend: the nearest race that has not finished yet, skipping races whose status is uncertain. */
+export function nextRace(today: string, races = RACES) {
+  const upcoming = races.filter((r) => r.date >= today).sort((a, b) => a.date.localeCompare(b.date));
+  return upcoming.find((r) => r.status !== 'uncertain') ?? upcoming[0] ?? null;
+}

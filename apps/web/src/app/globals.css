@@ -167,3 +167,5 @@ a.card:hover { border-left-color: var(--red); color: var(--navy); }
 .foot { font-size: 12px; color: var(--muted); }
 @media (min-width: 900px) { .hero-title { font-size: 84px; } }
 .btn.disabled { opacity: .5; pointer-events: none; }
+.tower .next-tag { margin-left: 8px; background: var(--red); color: #fff; font-size: 13px; padding: 1px 7px; }
+.hero .next .muted { color: var(--muted); }

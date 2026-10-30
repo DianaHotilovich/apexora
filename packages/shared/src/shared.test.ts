@@ -89,3 +89,13 @@ describe('stay deep links', () => {
     expect(a.searchParams.get('price_max')).toBe('120');
   });
 });
+
+import { nextRace } from './trip';
+describe('next race', () => {
+  it('moves on by itself after each race and skips uncertain ones', () => {
+    expect(nextRace('2027-07-27')?.id).toBe('hungary-2027');
+    expect(nextRace('2027-08-02')?.id).not.toBe('hungary-2027');
+    expect(nextRace('2027-01-01')?.status).toBe('confirmed');
+    expect(nextRace('2028-01-01')).toBeNull();
+  });
+});
