@@ -1,8 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { useMemo, useState } from 'react';
-import { getGuide, RACES, summarizeTrip } from '@gridtrip/shared';
+import { useEffect, useMemo, useState } from 'react';
+import { getGuide, nextRace, RACES, summarizeTrip } from '@gridtrip/shared';
 import { Money, Top, useApp } from '@/components/App';
 import { suggest } from '@/lib/data';
 
@@ -10,16 +10,19 @@ import { suggest } from '@/lib/data';
 export default function Races() {
   const { t, lang, rates } = useApp();
   const [q, setQ] = useState('');
+  const [nextId, setNextId] = useState<string | null>(null);
+  useEffect(() => { setNextId(nextRace(new Date().toISOString().slice(0, 10))?.id ?? null); }, []);
 
   const prices = useMemo(() => {
-    const m = new Map<string, number>();
+    const m = new Map<string, { total: number; complete: boolean }>();
     for (const r of RACES) {
       const items = suggest(r.id, 'budget', rates);
-      if (items.length) m.set(r.id, summarizeTrip(items, 'EUR', rates).total);
+      if (items.length) { const s = summarizeTrip(items, 'EUR', rates); m.set(r.id, { total: s.total, complete: s.missing.length === 0 }); }
     }
     return m;
   }, [rates]);
-  const best = Math.min(...prices.values());
+  // Purple only for a complete package (ticket + stay + travel), never for a lone ticket.
+  const best = Math.min(...[...prices.values()].filter((p) => p.complete).map((p) => p.total));
 
   const list = RACES.filter((r) => {
     const s = q.trim().toLowerCase();
@@ -43,10 +46,10 @@ export default function Races() {
               <span className="pos">{r.round}</span>
               <span>
                 <span className="name">{getGuide(r.countryCode)?.name[lang] ?? r.name[lang]}</span>
-                <span className="sub" style={{ display: 'block' }}>{fmt(r.date)}, {r.city}</span>
+                <span className="sub" style={{ display: 'block' }}>{fmt(r.date)}, {r.city}{r.id === nextId && <span className="tag next-tag">{t.nextTag}</span>}</span>
               </span>
               {r.status === 'uncertain' ? <span className="tag warn">{t.uncertain}</span>
-                : p !== undefined ? <span className={`price${p === best ? ' best' : ''}`}><Money amount={p} currency="EUR" /></span>
+                : p !== undefined ? <span className={`price${p.complete && p.total === best ? ' best' : ''}`}><Money amount={p.total} currency="EUR" /></span>
                 : <span className="price none">{t.noPrice}</span>}
             </Link>
           );
