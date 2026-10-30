@@ -41,17 +41,17 @@ export default function Trip() {
       {trip.status === 'payment_pending' && <div className="note">{t.pending}</div>}
       <h1>{t.beforeTrip}</h1>
       <div className="muted small">{r.name[lang]} · {days} {t.daysTo} · {done.size}/{items.length} {t.ready}</div>
-      <div className="bar" aria-hidden="true"><div style={{ width: `${pct}%` }} /></div>
+      <div className="progress" aria-hidden="true"><div style={{ width: `${pct}%` }} /></div>
       <div className="card" style={{ gap: 0 }}>
         {items.map((i) => (
           <label key={i.id} className="check">
-            <input type="checkbox" checked={done.has(i.id)} onChange={() => toggle(i.id)} />{i.text}
+            <input type="checkbox" checked={done.has(i.id)} onChange={() => toggle(i.id)} /><span>{i.text}</span>
           </label>
         ))}
       </div>
       <div className="bottom grid2">
         <Link href={`/guides/${r.countryCode}/`} className="btn ghost">{t.guide}</Link>
-        <Link href={`/sos/${r.countryCode}/`} className="btn red">{t.sos}</Link>
+        <Link href={`/sos/${r.countryCode}/`} className="btn sosb">{t.sos}</Link>
       </div>
     </main>
   );

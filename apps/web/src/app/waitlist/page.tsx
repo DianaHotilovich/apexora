@@ -24,8 +24,8 @@ export default function Waitlist() {
     <div className="dark" style={{ minHeight: '100dvh' }}>
       <main className="wrap">
         <Top back="/" />
-        <div className="eyebrow" style={{ marginTop: 32 }}>{t.season}</div>
-        <h1 className="hero">{t.joinTitle}</h1>
+        <div className="step" style={{ marginTop: 32 }}>{t.season}</div>
+        <h1 className="hero-title">{t.joinTitle}</h1>
         <p className="muted">{t.joinText}</p>
         <form onSubmit={submit} className="stack">
           <label className="field" style={{ color: '#c4cae0' }}>{t.email}

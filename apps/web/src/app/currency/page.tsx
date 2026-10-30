@@ -27,7 +27,7 @@ export default function Currency() {
           </label>
         </div>
         <div className="muted small strong">{t.isAbout}</div>
-        <div style={{ fontSize: 34, fontWeight: 800, color: 'var(--accent)' }}>
+        <div className="big-result">
           {ok ? formatMoney(convert(n, from, currency, rates), currency, locale) : '—'}
         </div>
         {!ok && <p className="small">{t.rateMissing}</p>}
