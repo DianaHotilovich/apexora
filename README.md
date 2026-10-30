@@ -1,5 +1,7 @@
 # GridTrip
 
+**Live demo: https://dianahotilovich.github.io/gridtrip/**
+
 **Plan a whole Formula 1 Grand Prix trip in one place: ticket, stay and getting there, matched to your budget, in your currency and language.**
 
 GridTrip is a portfolio and university project (VIZJA, *Zarządzanie projektem produktu cyfrowego*, 2026). It covers the full 2027 F1 calendar (24 races), three budget levels, real sourced offers, flexible payments and offline country guides for the race weekend.
