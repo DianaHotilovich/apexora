@@ -1,0 +1,22 @@
+# Full stack: Postgres + API + web.  Run: docker compose up --build  ->  http://localhost:3000
+services:
+  db:
+    image: postgres:16-alpine
+    environment: { POSTGRES_USER: gridtrip, POSTGRES_PASSWORD: gridtrip, POSTGRES_DB: gridtrip }
+    volumes: [db:/var/lib/postgresql/data]
+    healthcheck: { test: ["CMD-SHELL", "pg_isready -U gridtrip"], interval: 3s, retries: 20 }
+  api:
+    build: { context: ., dockerfile: apps/api/Dockerfile }
+    environment:
+      DATABASE_URL: postgres://gridtrip:gridtrip@db:5432/gridtrip
+      CORS_ORIGIN: http://localhost:3000
+      ADYEN_API_KEY: ${ADYEN_API_KEY:-}
+      ADYEN_MERCHANT_ACCOUNT: ${ADYEN_MERCHANT_ACCOUNT:-}
+    ports: ["4000:4000"]
+    depends_on: { db: { condition: service_healthy } }
+  web:
+    build: { context: ., dockerfile: apps/web/Dockerfile, args: { NEXT_PUBLIC_API_URL: http://localhost:4000 } }
+    ports: ["3000:80"]
+    depends_on: [api]
+volumes:
+  db:

@@ -1,0 +1,17 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npm run build:shared
+      - run: npm test
+        env: { RATES_OFFLINE: '1' }
+      - run: npm run build -w @gridtrip/web
+      - name: Mobile type-check
+        working-directory: apps/mobile
+        run: npm ci && npx tsc --noEmit

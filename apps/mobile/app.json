@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "GridTrip",
+    "slug": "gridtrip",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#12172B",
+    "ios": { "bundleIdentifier": "app.gridtrip", "supportsTablet": false },
+    "android": { "package": "app.gridtrip" },
+    "web": { "bundler": "metro", "output": "single" },
+    "plugins": ["expo-status-bar"]
+  }
+}

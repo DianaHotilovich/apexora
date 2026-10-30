@@ -1,0 +1,1649 @@
+[
+ {
+  "code": "BH",
+  "region": "me",
+  "sos": [
+   {
+    "number": "999",
+    "label": {
+     "pl": "Wszystkie służby",
+     "en": "All services"
+    }
+   },
+   {
+    "number": "112",
+    "label": {
+     "pl": "Z komórki",
+     "en": "From a mobile"
+    }
+   }
+  ],
+  "name": {
+   "pl": "Bahrajn",
+   "en": "Bahrain"
+  },
+  "gpLabel": {
+   "pl": "14 marca 2027",
+   "en": "14 March 2027"
+  },
+  "place": {
+   "pl": "Sakhir",
+   "en": "Sakhir"
+  },
+  "warning": {
+   "pl": "Wyścig w kalendarzu 2027 oznaczony jako niepewny – sprawdź status w aplikacji.",
+   "en": "This race is marked as uncertain in the 2027 calendar – check its status in the app."
+  },
+  "sim": {
+   "pl": "Batelco, Zain, stc – kioski w hali przylotów, salony, supermarkety. Np. stc 22,5 GB + 200 min za 7,5 BHD. Paszport i adres hotelu.",
+   "en": "Batelco, Zain, stc – kiosks in the arrivals hall, shops, supermarkets. E.g. stc 22.5 GB + 200 min for 7.5 BHD. Bring your passport and hotel address."
+  },
+  "transport": {
+   "pl": "Brak sprawdzonych danych z 2026 r. – sprawdź w aplikacji.",
+   "en": "No verified 2026 data yet – check in the app."
+  },
+  "money": {
+   "pl": "dinar bahrajski (BHD)",
+   "en": "Bahraini dinar (BHD)"
+  },
+  "language": {
+   "pl": "arabski, powszechnie angielski",
+   "en": "Arabic, English widely spoken"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "النجدة!"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "اتصلوا بالإسعاف"
+   }
+  ],
+  "sources": {
+   "pl": "SIM: yesim.tech (08.2026)",
+   "en": "SIM: yesim.tech (08.2026)"
+  }
+ },
+ {
+  "code": "SA",
+  "region": "me",
+  "sos": [
+   {
+    "number": "911",
+    "label": {
+     "pl": "Numer wspólny",
+     "en": "Unified number"
+    }
+   },
+   {
+    "number": "999",
+    "label": {
+     "pl": "Policja",
+     "en": "Police"
+    }
+   },
+   {
+    "number": "997",
+    "label": {
+     "pl": "Pogotowie",
+     "en": "Ambulance"
+    }
+   },
+   {
+    "number": "998",
+    "label": {
+     "pl": "Straż",
+     "en": "Fire"
+    }
+   }
+  ],
+  "name": {
+   "pl": "Arabia Saudyjska",
+   "en": "Saudi Arabia"
+  },
+  "gpLabel": {
+   "pl": "21 marca 2027",
+   "en": "21 March 2027"
+  },
+  "place": {
+   "pl": "Dżudda",
+   "en": "Jeddah"
+  },
+  "warning": {
+   "pl": "Wyścig w kalendarzu 2027 oznaczony jako niepewny – sprawdź status w aplikacji.",
+   "en": "This race is marked as uncertain in the 2027 calendar – check its status in the app."
+  },
+  "sim": {
+   "pl": "STC, Mobily, Zain, Salam – lotniska, salony, centra handlowe. Pakiety od ok. 35 SAR (5–6 GB). Paszport i wiza.",
+   "en": "STC, Mobily, Zain, Salam – airports, shops, malls. Packages from about 35 SAR (5–6 GB). Passport and visa required."
+  },
+  "transport": {
+   "pl": "Careem, Uber, Yango",
+   "en": "Careem, Uber, Yango"
+  },
+  "money": {
+   "pl": "rial saudyjski (SAR)",
+   "en": "Saudi riyal (SAR)"
+  },
+  "language": {
+   "pl": "arabski",
+   "en": "Arabic"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "النجدة!"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "اتصلوا بالإسعاف"
+   }
+  ],
+  "sources": {
+   "pl": "SIM: ksaexpats.com (07.2026)",
+   "en": "SIM: ksaexpats.com (07.2026)"
+  }
+ },
+ {
+  "code": "AU",
+  "region": "ap",
+  "sos": [
+   {
+    "number": "000",
+    "label": {
+     "pl": "Wszystkie służby",
+     "en": "All services"
+    }
+   },
+   {
+    "number": "112",
+    "label": {
+     "pl": "Z komórki",
+     "en": "From a mobile"
+    }
+   }
+  ],
+  "name": {
+   "pl": "Australia",
+   "en": "Australia"
+  },
+  "gpLabel": {
+   "pl": "4 kwietnia 2027",
+   "en": "4 April 2027"
+  },
+  "place": {
+   "pl": "Melbourne, Albert Park",
+   "en": "Melbourne, Albert Park"
+  },
+  "warning": {
+   "pl": "Kup kartę na lotnisku w Melbourne – kioski Telstra i Optus są zaraz po przylocie.",
+   "en": "Buy your SIM at Melbourne airport – Telstra and Optus kiosks are right after arrivals."
+  },
+  "sim": {
+   "pl": "Telstra, Optus, Vodafone. Np. Vodafone 40 GB / 28 dni ok. 19 USD. Też w supermarketach Coles i Woolworths. Paszport.",
+   "en": "Telstra, Optus, Vodafone. E.g. Vodafone 40 GB / 28 days for about 19 USD. Also at Coles and Woolworths supermarkets. Passport."
+  },
+  "transport": {
+   "pl": "DiDi",
+   "en": "DiDi"
+  },
+  "money": {
+   "pl": "dolar australijski (AUD)",
+   "en": "Australian dollar (AUD)"
+  },
+  "language": {
+   "pl": "angielski",
+   "en": "English"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "Help!"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "Call an ambulance"
+   }
+  ],
+  "sources": {
+   "pl": "SIM: yesim.tech (2026)",
+   "en": "SIM: yesim.tech (2026)"
+  }
+ },
+ {
+  "code": "JP",
+  "region": "ap",
+  "sos": [
+   {
+    "number": "110",
+    "label": {
+     "pl": "Policja",
+     "en": "Police"
+    }
+   },
+   {
+    "number": "119",
+    "label": {
+     "pl": "Pogotowie i straż",
+     "en": "Ambulance and fire"
+    }
+   }
+  ],
+  "name": {
+   "pl": "Japonia",
+   "en": "Japan"
+  },
+  "gpLabel": {
+   "pl": "11 kwietnia 2027",
+   "en": "11 April 2027"
+  },
+  "place": {
+   "pl": "Suzuka",
+   "en": "Suzuka"
+  },
+  "warning": {
+   "pl": "Karty zwykle dają tylko internet, bez numeru. Kup eSIM przed lotem – na lotnisku kolejka 15–30 min.",
+   "en": "Tourist SIMs usually give data only, no phone number. Buy an eSIM before your flight – airport queues take 15–30 min."
+  },
+  "sim": {
+   "pl": "eSIM online, np. 50 GB / 16 dni za 3 900 JPY. Stanowiska i automaty na Narita, Haneda, Kansai. Telefon odblokowany.",
+   "en": "eSIM online, e.g. 50 GB / 16 days for 3,900 JPY. Counters and vending machines at Narita, Haneda and Kansai. Unlocked phone needed."
+  },
+  "transport": {
+   "pl": "Brak sprawdzonych danych z 2026 r. Bilety na GP można opłacić w 7-Eleven.",
+   "en": "No verified 2026 data yet. Race tickets can be paid in cash at 7-Eleven."
+  },
+  "money": {
+   "pl": "jen (JPY)",
+   "en": "Japanese yen (JPY)"
+  },
+  "language": {
+   "pl": "japoński",
+   "en": "Japanese"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "助けて！"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "救急車を呼んでください"
+   }
+  ],
+  "sources": {
+   "pl": "SIM: CDJapan (03.2026)",
+   "en": "SIM: CDJapan (03.2026)"
+  }
+ },
+ {
+  "code": "CN",
+  "region": "ap",
+  "sos": [
+   {
+    "number": "110",
+    "label": {
+     "pl": "Policja",
+     "en": "Police"
+    }
+   },
+   {
+    "number": "120",
+    "label": {
+     "pl": "Pogotowie",
+     "en": "Ambulance"
+    }
+   },
+   {
+    "number": "119",
+    "label": {
+     "pl": "Straż",
+     "en": "Fire"
+    }
+   }
+  ],
+  "name": {
+   "pl": "Chiny",
+   "en": "China"
+  },
+  "gpLabel": {
+   "pl": "18 kwietnia 2027",
+   "en": "18 April 2027"
+  },
+  "place": {
+   "pl": "Szanghaj",
+   "en": "Shanghai"
+  },
+  "warning": {
+   "pl": "Google, WhatsApp i YouTube są zablokowane. Przed wyjazdem zainstaluj Alipay, WeChat i mapy Amap.",
+   "en": "Google, WhatsApp and YouTube are blocked. Install Alipay, WeChat and Amap maps before you travel."
+  },
+  "sim": {
+   "pl": "China Mobile (największy zasięg), China Unicom (najlepszy dla zagranicznych telefonów). Lotniska i salony. Paszport.",
+   "en": "China Mobile (widest coverage), China Unicom (best for foreign phones). Airports and shops. Passport."
+  },
+  "transport": {
+   "pl": "DiDi; płatności Alipay i WeChat",
+   "en": "DiDi; pay with Alipay or WeChat"
+  },
+  "money": {
+   "pl": "juan (CNY)",
+   "en": "Chinese yuan (CNY)"
+  },
+  "language": {
+   "pl": "chiński",
+   "en": "Chinese"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "救命！"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "请叫救护车"
+   }
+  ],
+  "sources": {
+   "pl": "SIM: yesim.tech (08.2026)",
+   "en": "SIM: yesim.tech (08.2026)"
+  }
+ },
+ {
+  "code": "US",
+  "region": "am",
+  "sos": [
+   {
+    "number": "911",
+    "label": {
+     "pl": "Wszystkie służby",
+     "en": "All services"
+    }
+   }
+  ],
+  "name": {
+   "pl": "USA",
+   "en": "USA"
+  },
+  "gpLabel": {
+   "pl": "Miami 2.05 · Austin 24.10 · Las Vegas 20.11.2027",
+   "en": "Miami 2.05 · Austin 24.10 · Las Vegas 20.11.2027"
+  },
+  "place": {
+   "pl": "Miami, Austin, Las Vegas",
+   "en": "Miami, Austin, Las Vegas"
+  },
+  "warning": {
+   "pl": "Ceny w sklepach podawane są bez podatku – przy kasie zapłacisz więcej.",
+   "en": "Shop prices are shown without sales tax – you pay more at the till."
+  },
+  "sim": {
+   "pl": "Ultra Mobile ok. 19 USD (4 GB / 30 dni), Lycamobile od 15 USD, T-Mobile ok. 40 USD (15 GB). Walmart, Target, Best Buy.",
+   "en": "Ultra Mobile about 19 USD (4 GB / 30 days), Lycamobile from 15 USD, T-Mobile about 40 USD (15 GB). Walmart, Target, Best Buy."
+  },
+  "transport": {
+   "pl": "Uber, Lyft",
+   "en": "Uber, Lyft"
+  },
+  "money": {
+   "pl": "dolar amerykański (USD)",
+   "en": "US dollar (USD)"
+  },
+  "language": {
+   "pl": "angielski",
+   "en": "English"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "Help!"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "Call an ambulance"
+   }
+  ],
+  "sources": {
+   "pl": "SIM: androidcentral.com (08.2026)",
+   "en": "SIM: androidcentral.com (08.2026)"
+  }
+ },
+ {
+  "code": "CA",
+  "region": "am",
+  "sos": [
+   {
+    "number": "911",
+    "label": {
+     "pl": "Wszystkie służby",
+     "en": "All services"
+    }
+   }
+  ],
+  "name": {
+   "pl": "Kanada",
+   "en": "Canada"
+  },
+  "gpLabel": {
+   "pl": "23 maja 2027",
+   "en": "23 May 2027"
+  },
+  "place": {
+   "pl": "Montreal",
+   "en": "Montreal"
+  },
+  "warning": {
+   "pl": "W Montrealu dominuje francuski. Karta na lotnisku jest droższa niż w mieście.",
+   "en": "French is the main language in Montreal. SIM cards at the airport cost more than in the city."
+  },
+  "sim": {
+   "pl": "Lucky Mobile od 21 CAD, Public Mobile ok. 25–30 CAD, Telus prepaid 19–35 CAD. Paszport.",
+   "en": "Lucky Mobile from 21 CAD, Public Mobile about 25–30 CAD, Telus prepaid 19–35 CAD. Passport."
+  },
+  "transport": {
+   "pl": "Uber, Lyft",
+   "en": "Uber, Lyft"
+  },
+  "money": {
+   "pl": "dolar kanadyjski (CAD)",
+   "en": "Canadian dollar (CAD)"
+  },
+  "language": {
+   "pl": "francuski i angielski",
+   "en": "French and English"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "Au secours !"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "Appelez une ambulance"
+   }
+  ],
+  "sources": {
+   "pl": "SIM: zetsim.com (04.2026)",
+   "en": "SIM: zetsim.com (04.2026)"
+  }
+ },
+ {
+  "code": "MC",
+  "region": "eu2",
+  "sos": [
+   {
+    "number": "112",
+    "label": {
+     "pl": "Numer wspólny",
+     "en": "Unified number"
+    }
+   },
+   {
+    "number": "17",
+    "label": {
+     "pl": "Policja",
+     "en": "Police"
+    }
+   },
+   {
+    "number": "18",
+    "label": {
+     "pl": "Straż i pogotowie",
+     "en": "Fire and ambulance"
+    }
+   }
+  ],
+  "name": {
+   "pl": "Monako",
+   "en": "Monaco"
+  },
+  "gpLabel": {
+   "pl": "6 czerwca 2027",
+   "en": "6 June 2027"
+  },
+  "place": {
+   "pl": "Monte Carlo",
+   "en": "Monte Carlo"
+  },
+  "warning": {
+   "pl": "Roaming z UE tu NIE działa. Ustaw w telefonie ręcznie sieć francuską (Orange, SFR, Bouygues).",
+   "en": "EU roaming does NOT work here. Manually select a French network on your phone (Orange, SFR, Bouygues)."
+  },
+  "sim": {
+   "pl": "Turystyczną kartę trudno kupić. Najlepiej eSIM kupiony przed wyjazdem albo francuska sieć.",
+   "en": "Tourist SIMs are hard to buy. Best option: an eSIM bought before the trip, or a French network."
+  },
+  "transport": {
+   "pl": "Brak sprawdzonych danych z 2026 r.",
+   "en": "No verified 2026 data yet – check in the app."
+  },
+  "money": {
+   "pl": "euro (EUR)",
+   "en": "Euro (EUR)"
+  },
+  "language": {
+   "pl": "francuski",
+   "en": "French"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "Au secours !"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "Appelez une ambulance"
+   }
+  ],
+  "sources": {
+   "pl": "Roaming: fuel-prices.eu (01.2026)",
+   "en": "Roaming: fuel-prices.eu (01.2026)"
+  }
+ },
+ {
+  "code": "PT",
+  "region": "eu",
+  "sos": [
+   {
+    "number": "112",
+    "label": {
+     "pl": "Wszystkie służby",
+     "en": "All services"
+    }
+   }
+  ],
+  "name": {
+   "pl": "Portugalia",
+   "en": "Portugal"
+  },
+  "gpLabel": {
+   "pl": "20 czerwca 2027",
+   "en": "20 June 2027"
+  },
+  "place": {
+   "pl": "Portimão",
+   "en": "Portimão"
+  },
+  "warning": {
+   "pl": "Z kartą SIM z UE internet działa jak w domu.",
+   "en": "With an EU SIM card, mobile data works just like at home."
+  },
+  "sim": {
+   "pl": "MEO, NOS, Vodafone. Na lotnisku w Faro kioski MEO i Vodafone za odbiorem bagażu, ok. 10–25 €. Paszport.",
+   "en": "MEO, NOS, Vodafone. At Faro airport MEO and Vodafone kiosks are past baggage claim, about 10–25 EUR. Passport."
+  },
+  "transport": {
+   "pl": "Bolt, Cabify",
+   "en": "Bolt, Cabify"
+  },
+  "money": {
+   "pl": "euro (EUR)",
+   "en": "Euro (EUR)"
+  },
+  "language": {
+   "pl": "portugalski",
+   "en": "Portuguese"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "Socorro!"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "Chame uma ambulância"
+   }
+  ],
+  "sources": {
+   "pl": "SIM: simbye.com (05.2026)",
+   "en": "SIM: simbye.com (05.2026)"
+  }
+ },
+ {
+  "code": "GB",
+  "region": "eu2",
+  "sos": [
+   {
+    "number": "999",
+    "label": {
+     "pl": "Wszystkie służby",
+     "en": "All services"
+    }
+   },
+   {
+    "number": "112",
+    "label": {
+     "pl": "Też działa",
+     "en": "Also works"
+    }
+   }
+  ],
+  "name": {
+   "pl": "Wielka Brytania",
+   "en": "United Kingdom"
+  },
+  "gpLabel": {
+   "pl": "4 lipca 2027",
+   "en": "4 July 2027"
+  },
+  "place": {
+   "pl": "Silverstone",
+   "en": "Silverstone"
+  },
+  "warning": {
+   "pl": "To nie UE: sprawdź u swojego operatora, czy roaming jest w cenie.",
+   "en": "Not in the EU: check with your operator whether roaming is included."
+  },
+  "sim": {
+   "pl": "Na 30 dni: EE 9 £ (20 GB), Three 10 £ (60 GB), Vodafone 10 £ (27 GB). Lotniska, WHSmith, Tesco.",
+   "en": "For 30 days: EE 9 GBP (20 GB), Three 10 GBP (60 GB), Vodafone 10 GBP (27 GB). Airports, WHSmith, Tesco."
+  },
+  "transport": {
+   "pl": "Uber, Bolt, Free Now",
+   "en": "Uber, Bolt, Free Now"
+  },
+  "money": {
+   "pl": "funt (GBP)",
+   "en": "Pound sterling (GBP)"
+  },
+  "language": {
+   "pl": "angielski",
+   "en": "English"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "Help!"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "Call an ambulance"
+   }
+  ],
+  "sources": {
+   "pl": "SIM: saily.com (08.2026)",
+   "en": "SIM: saily.com (08.2026)"
+  }
+ },
+ {
+  "code": "AT",
+  "region": "eu",
+  "sos": [
+   {
+    "number": "112",
+    "label": {
+     "pl": "Numer wspólny",
+     "en": "Unified number"
+    }
+   },
+   {
+    "number": "133",
+    "label": {
+     "pl": "Policja",
+     "en": "Police"
+    }
+   },
+   {
+    "number": "144",
+    "label": {
+     "pl": "Pogotowie",
+     "en": "Ambulance"
+    }
+   },
+   {
+    "number": "122",
+    "label": {
+     "pl": "Straż",
+     "en": "Fire"
+    }
+   }
+  ],
+  "name": {
+   "pl": "Austria",
+   "en": "Austria"
+  },
+  "gpLabel": {
+   "pl": "11 lipca 2027",
+   "en": "11 July 2027"
+  },
+  "place": {
+   "pl": "Spielberg, Red Bull Ring",
+   "en": "Spielberg, Red Bull Ring"
+  },
+  "warning": {
+   "pl": "Na tor: pociąg ÖBB do Knittelfeld, potem darmowy autobus (w 2026 co 20 min).",
+   "en": "To the track: ÖBB train to Knittelfeld, then a free shuttle bus (every 20 min in 2026)."
+  },
+  "sim": {
+   "pl": "A1, Magenta, Drei. Aktywacja ok. 10 € + pakiet, razem ok. 20 €. Kioski na lotnisku w Wiedniu. Paszport.",
+   "en": "A1, Magenta, Drei. Activation about 10 EUR + data package, about 20 EUR in total. Kiosks at Vienna airport. Passport."
+  },
+  "transport": {
+   "pl": "Pociąg ÖBB + darmowy shuttle z Knittelfeld",
+   "en": "ÖBB train + free shuttle from Knittelfeld"
+  },
+  "money": {
+   "pl": "euro (EUR)",
+   "en": "Euro (EUR)"
+  },
+  "language": {
+   "pl": "niemiecki",
+   "en": "German"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "Hilfe!"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "Rufen Sie einen Krankenwagen"
+   }
+  ],
+  "sources": {
+   "pl": "SIM: yesim.tech (2026); dojazd: steiermark.com (2026)",
+   "en": "SIM: yesim.tech (2026); transport: steiermark.com (2026)"
+  }
+ },
+ {
+  "code": "BE",
+  "region": "eu",
+  "sos": [
+   {
+    "number": "112",
+    "label": {
+     "pl": "Numer wspólny",
+     "en": "Unified number"
+    }
+   },
+   {
+    "number": "101",
+    "label": {
+     "pl": "Policja",
+     "en": "Police"
+    }
+   }
+  ],
+  "name": {
+   "pl": "Belgia",
+   "en": "Belgium"
+  },
+  "gpLabel": {
+   "pl": "25 lipca 2027",
+   "en": "25 July 2027"
+  },
+  "place": {
+   "pl": "Spa-Francorchamps",
+   "en": "Spa-Francorchamps"
+  },
+  "warning": {
+   "pl": "Kartę SIM trzeba zarejestrować paszportem – inaczej wyłączy się po 15 dniach.",
+   "en": "Register your SIM with your passport – otherwise it is switched off after 15 days."
+  },
+  "sim": {
+   "pl": "Proximus, Orange, BASE, Lycamobile. Pakiety od 5 € (internet 10–25 €). Salony, Carrefour, Delhaize.",
+   "en": "Proximus, Orange, BASE, Lycamobile. Packages from 5 EUR (data 10–25 EUR). Shops, Carrefour, Delhaize."
+  },
+  "transport": {
+   "pl": "Brak sprawdzonych danych z 2026 r.",
+   "en": "No verified 2026 data yet – check in the app."
+  },
+  "money": {
+   "pl": "euro (EUR)",
+   "en": "Euro (EUR)"
+  },
+  "language": {
+   "pl": "francuski (region Spa)",
+   "en": "French (Spa region)"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "Au secours !"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "Appelez une ambulance"
+   }
+  ],
+  "sources": {
+   "pl": "SIM: callmepower.be (ceny 10.2026)",
+   "en": "SIM: callmepower.be (prices 10.2026)"
+  }
+ },
+ {
+  "code": "HU",
+  "region": "eu",
+  "sos": [
+   {
+    "number": "112",
+    "label": {
+     "pl": "Numer wspólny",
+     "en": "Unified number"
+    }
+   },
+   {
+    "number": "107",
+    "label": {
+     "pl": "Policja",
+     "en": "Police"
+    }
+   },
+   {
+    "number": "104",
+    "label": {
+     "pl": "Pogotowie",
+     "en": "Ambulance"
+    }
+   },
+   {
+    "number": "105",
+    "label": {
+     "pl": "Straż",
+     "en": "Fire"
+    }
+   }
+  ],
+  "name": {
+   "pl": "Węgry",
+   "en": "Hungary"
+  },
+  "gpLabel": {
+   "pl": "1 sierpnia 2027",
+   "en": "1 August 2027"
+  },
+  "place": {
+   "pl": "Hungaroring, Budapeszt",
+   "en": "Hungaroring, Budapest"
+  },
+  "warning": {
+   "pl": "Na tor jadą oficjalne autobusy z dworca Keleti – bilety na f1hungary.com.",
+   "en": "Official buses to the track leave from Keleti station – tickets on f1hungary.com."
+  },
+  "sim": {
+   "pl": "Magyar Telekom, Yettel (karta 490 HUF + 3 GB za 2 500 HUF), One. Kioski na lotnisku. Paszport.",
+   "en": "Magyar Telekom, Yettel (SIM 490 HUF + 3 GB for 2,500 HUF), One. Airport kiosks. Passport."
+  },
+  "transport": {
+   "pl": "Bolt; metro M2 + kolejka HÉV H8 do Mogyoród",
+   "en": "Bolt; metro M2 + HÉV H8 suburban train to Mogyoród"
+  },
+  "money": {
+   "pl": "forint (HUF)",
+   "en": "Hungarian forint (HUF)"
+  },
+  "language": {
+   "pl": "węgierski",
+   "en": "Hungarian"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "Segítség!"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "Hívjon mentőt!"
+   }
+  ],
+  "sources": {
+   "pl": "SIM: yesim.tech (2026); dojazd: radicalstorage.com (06.2026)",
+   "en": "SIM: yesim.tech (2026); transport: radicalstorage.com (06.2026)"
+  }
+ },
+ {
+  "code": "IT",
+  "region": "eu",
+  "sos": [
+   {
+    "number": "112",
+    "label": {
+     "pl": "Numer wspólny",
+     "en": "Unified number"
+    }
+   },
+   {
+    "number": "113",
+    "label": {
+     "pl": "Policja",
+     "en": "Police"
+    }
+   },
+   {
+    "number": "118",
+    "label": {
+     "pl": "Pogotowie",
+     "en": "Ambulance"
+    }
+   },
+   {
+    "number": "115",
+    "label": {
+     "pl": "Straż",
+     "en": "Fire"
+    }
+   }
+  ],
+  "name": {
+   "pl": "Włochy",
+   "en": "Italy"
+  },
+  "gpLabel": {
+   "pl": "5 września 2027",
+   "en": "5 September 2027"
+  },
+  "place": {
+   "pl": "Monza",
+   "en": "Monza"
+  },
+  "warning": {
+   "pl": "Vodafone Dolce Vita odnawia się co miesiąc – po powrocie trzeba go anulować.",
+   "en": "Vodafone Dolce Vita renews every month – cancel it when you get home."
+  },
+  "sim": {
+   "pl": "Vodafone Dolce Vita 14,95 € (200 GB / 30 dni), WindTre Tourist Pass 25 €, TIM Tourist 24,99 €. Paszport.",
+   "en": "Vodafone Dolce Vita 14.95 EUR (200 GB / 30 days), WindTre Tourist Pass 25 EUR, TIM Tourist 24.99 EUR. Passport."
+  },
+  "transport": {
+   "pl": "Uber, Bolt",
+   "en": "Uber, Bolt"
+  },
+  "money": {
+   "pl": "euro (EUR)",
+   "en": "Euro (EUR)"
+  },
+  "language": {
+   "pl": "włoski",
+   "en": "Italian"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "Aiuto!"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "Chiami un'ambulanza"
+   }
+  ],
+  "sources": {
+   "pl": "SIM: thelocal.it (02.2026)",
+   "en": "SIM: thelocal.it (02.2026)"
+  }
+ },
+ {
+  "code": "ES",
+  "region": "eu",
+  "sos": [
+   {
+    "number": "112",
+    "label": {
+     "pl": "Wszystkie służby",
+     "en": "All services"
+    }
+   }
+  ],
+  "name": {
+   "pl": "Hiszpania",
+   "en": "Spain"
+  },
+  "gpLabel": {
+   "pl": "12 września 2027",
+   "en": "12 September 2027"
+  },
+  "place": {
+   "pl": "Madryt, Madring",
+   "en": "Madrid, Madring"
+  },
+  "warning": {
+   "pl": "Karta na lotnisku jest o 30–50% droższa niż w mieście.",
+   "en": "SIM cards at the airport cost 30–50% more than in the city."
+  },
+  "sim": {
+   "pl": "Orange 10 € (80 GB), Vodafone 15 € (270 GB / 28 dni), Movistar ok. 15 € (40 GB). Paszport.",
+   "en": "Orange 10 EUR (80 GB), Vodafone 15 EUR (270 GB / 28 days), Movistar about 15 EUR (40 GB). Passport."
+  },
+  "transport": {
+   "pl": "Uber, Bolt, Cabify; na tor metro (linie 4 i 8)",
+   "en": "Uber, Bolt, Cabify; metro to the track (lines 4 and 8)"
+  },
+  "money": {
+   "pl": "euro (EUR)",
+   "en": "Euro (EUR)"
+  },
+  "language": {
+   "pl": "hiszpański",
+   "en": "Spanish"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "¡Ayuda!"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "Llame a una ambulancia"
+   }
+  ],
+  "sources": {
+   "pl": "SIM: thebitjoy.com (05.2026)",
+   "en": "SIM: thebitjoy.com (05.2026)"
+  }
+ },
+ {
+  "code": "AZ",
+  "region": "eu2",
+  "sos": [
+   {
+    "number": "112",
+    "label": {
+     "pl": "Numer wspólny",
+     "en": "Unified number"
+    }
+   },
+   {
+    "number": "102",
+    "label": {
+     "pl": "Policja",
+     "en": "Police"
+    }
+   },
+   {
+    "number": "103",
+    "label": {
+     "pl": "Pogotowie",
+     "en": "Ambulance"
+    }
+   },
+   {
+    "number": "101",
+    "label": {
+     "pl": "Straż",
+     "en": "Fire"
+    }
+   }
+  ],
+  "name": {
+   "pl": "Azerbejdżan",
+   "en": "Azerbaijan"
+  },
+  "gpLabel": {
+   "pl": "26 września 2027",
+   "en": "26 September 2027"
+  },
+  "place": {
+   "pl": "Baku",
+   "en": "Baku"
+  },
+  "warning": {
+   "pl": "Na lotnisku nie ma oficjalnych salonów – kup kartę w mieście (np. ul. Nizami).",
+   "en": "There are no official operator shops at the airport – buy your SIM in the city (e.g. Nizami Street)."
+  },
+  "sim": {
+   "pl": "Azercell (8 AZN: 3 GB + 200 min, plus 5 AZN za start), Bakcell, Nar. Paszport.",
+   "en": "Azercell (8 AZN: 3 GB + 200 min, plus 5 AZN starter fee), Bakcell, Nar. Passport."
+  },
+  "transport": {
+   "pl": "Brak sprawdzonych danych z 2026 r.",
+   "en": "No verified 2026 data yet – check in the app."
+  },
+  "money": {
+   "pl": "manat (AZN)",
+   "en": "Azerbaijani manat (AZN)"
+  },
+  "language": {
+   "pl": "azerbejdżański",
+   "en": "Azerbaijani"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "Kömək edin!"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "Təcili yardım çağırın"
+   }
+  ],
+  "sources": {
+   "pl": "SIM: toomanyadapters.com (09.2026)",
+   "en": "SIM: toomanyadapters.com (09.2026)"
+  }
+ },
+ {
+  "code": "TR",
+  "region": "eu2",
+  "sos": [
+   {
+    "number": "112",
+    "label": {
+     "pl": "Wszystkie służby",
+     "en": "All services"
+    }
+   },
+   {
+    "number": "911",
+    "label": {
+     "pl": "Też działa",
+     "en": "Also works"
+    }
+   }
+  ],
+  "name": {
+   "pl": "Turcja",
+   "en": "Turkey"
+  },
+  "gpLabel": {
+   "pl": "3 października 2027",
+   "en": "3 October 2027"
+  },
+  "place": {
+   "pl": "Stambuł (Istanbul Park)",
+   "en": "Istanbul (Istanbul Park)"
+  },
+  "warning": {
+   "pl": "Lokalna karta wiąże się z rejestracją telefonu (IMEI). Na krótki pobyt wygodniejszy eSIM.",
+   "en": "A local SIM means registering your phone (IMEI). For a short stay an eSIM is easier."
+  },
+  "sim": {
+   "pl": "Turkcell, Vodafone, Türk Telekom. Na 10 dni ok. 200–500 TRY za 5–20 GB. Paszport.",
+   "en": "Turkcell, Vodafone, Türk Telekom. About 200–500 TRY for 5–20 GB for 10 days. Passport."
+  },
+  "transport": {
+   "pl": "Brak sprawdzonych danych z 2026 r.",
+   "en": "No verified 2026 data yet – check in the app."
+  },
+  "money": {
+   "pl": "lira turecka (TRY)",
+   "en": "Turkish lira (TRY)"
+  },
+  "language": {
+   "pl": "turecki",
+   "en": "Turkish"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "İmdat!"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "Ambulans çağırın"
+   }
+  ],
+  "sources": {
+   "pl": "SIM: simology.io (07.2026)",
+   "en": "SIM: simology.io (07.2026)"
+  }
+ },
+ {
+  "code": "SG",
+  "region": "ap",
+  "sos": [
+   {
+    "number": "999",
+    "label": {
+     "pl": "Policja",
+     "en": "Police"
+    }
+   },
+   {
+    "number": "995",
+    "label": {
+     "pl": "Pogotowie i straż",
+     "en": "Ambulance and fire"
+    }
+   }
+  ],
+  "name": {
+   "pl": "Singapur",
+   "en": "Singapore"
+  },
+  "gpLabel": {
+   "pl": "10 października 2027",
+   "en": "10 October 2027"
+  },
+  "place": {
+   "pl": "Marina Bay",
+   "en": "Marina Bay"
+  },
+  "warning": {
+   "pl": "Karta na paszport działa zwykle przez 30 dni.",
+   "en": "A SIM registered with a passport usually works for 30 days."
+  },
+  "sim": {
+   "pl": "Singtel 15 SGD (500 GB / 30 dni), StarHub 12 SGD (300 GB), M1 12 SGD (100 GB / 15 dni). Changi, 7-Eleven.",
+   "en": "Singtel 15 SGD (500 GB / 30 days), StarHub 12 SGD (300 GB), M1 12 SGD (100 GB / 15 days). Changi airport, 7-Eleven."
+  },
+  "transport": {
+   "pl": "Grab, Gojek",
+   "en": "Grab, Gojek"
+  },
+  "money": {
+   "pl": "dolar singapurski (SGD)",
+   "en": "Singapore dollar (SGD)"
+  },
+  "language": {
+   "pl": "angielski",
+   "en": "English"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "Help!"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "Call an ambulance"
+   }
+  ],
+  "sources": {
+   "pl": "SIM: saily.com (07.2026)",
+   "en": "SIM: saily.com (07.2026)"
+  }
+ },
+ {
+  "code": "MX",
+  "region": "am",
+  "sos": [
+   {
+    "number": "911",
+    "label": {
+     "pl": "Wszystkie służby",
+     "en": "All services"
+    }
+   }
+  ],
+  "name": {
+   "pl": "Meksyk",
+   "en": "Mexico"
+  },
+  "gpLabel": {
+   "pl": "31 października 2027",
+   "en": "31 October 2027"
+  },
+  "place": {
+   "pl": "Meksyk (miasto)",
+   "en": "Mexico City"
+  },
+  "warning": {
+   "pl": "Od 1.07.2026 niezarejestrowane linie są blokowane (działa tylko 911). Najprościej: eSIM.",
+   "en": "Since 1.07.2026 unregistered lines are blocked (only 911 works). Easiest option: an eSIM."
+  },
+  "sim": {
+   "pl": "Lokalną linię rejestruje się paszportem. eSIM tylko z internetem, np. 5 GB / 30 dni za 11 USD.",
+   "en": "A local line is registered with your passport. Data-only eSIM, e.g. 5 GB / 30 days for 11 USD."
+  },
+  "transport": {
+   "pl": "Uber, DiDi, Cabify",
+   "en": "Uber, DiDi, Cabify"
+  },
+  "money": {
+   "pl": "peso (MXN)",
+   "en": "Mexican peso (MXN)"
+  },
+  "language": {
+   "pl": "hiszpański",
+   "en": "Spanish"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "¡Ayuda!"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "Llame a una ambulancia"
+   }
+  ],
+  "sources": {
+   "pl": "xataka.com.mx (01.2026); mexicotravelandleisure.com (10.2026)",
+   "en": "xataka.com.mx (01.2026); mexicotravelandleisure.com (10.2026)"
+  }
+ },
+ {
+  "code": "BR",
+  "region": "am",
+  "sos": [
+   {
+    "number": "190",
+    "label": {
+     "pl": "Policja",
+     "en": "Police"
+    }
+   },
+   {
+    "number": "192",
+    "label": {
+     "pl": "Pogotowie",
+     "en": "Ambulance"
+    }
+   },
+   {
+    "number": "193",
+    "label": {
+     "pl": "Straż",
+     "en": "Fire"
+    }
+   }
+  ],
+  "name": {
+   "pl": "Brazylia",
+   "en": "Brazil"
+  },
+  "gpLabel": {
+   "pl": "7 listopada 2027",
+   "en": "7 November 2027"
+  },
+  "place": {
+   "pl": "São Paulo, Interlagos",
+   "en": "São Paulo, Interlagos"
+  },
+  "warning": {
+   "pl": "Kartę kupisz bez brazylijskiego numeru CPF – wystarczy paszport.",
+   "en": "You can buy a SIM without a Brazilian CPF number – a passport is enough."
+  },
+  "sim": {
+   "pl": "Vivo Tourist 55 BRL (25 GB / 30 dni, eSIM), Claro Flex Pass w aplikacji, TIM prepaid kodem *144.",
+   "en": "Vivo Tourist 55 BRL (25 GB / 30 days, eSIM), Claro Flex Pass in the app, TIM prepaid with code *144."
+  },
+  "transport": {
+   "pl": "Uber, 99, Cabify; na tor pociąg CPTM linii 9",
+   "en": "Uber, 99, Cabify; CPTM line 9 train to the track"
+  },
+  "money": {
+   "pl": "real (BRL)",
+   "en": "Brazilian real (BRL)"
+  },
+  "language": {
+   "pl": "portugalski",
+   "en": "Portuguese"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "Socorro!"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "Chame uma ambulância"
+   }
+  ],
+  "sources": {
+   "pl": "SIM: roafly.com (08.2026)",
+   "en": "SIM: roafly.com (08.2026)"
+  }
+ },
+ {
+  "code": "QA",
+  "region": "me",
+  "sos": [
+   {
+    "number": "999",
+    "label": {
+     "pl": "Wszystkie służby",
+     "en": "All services"
+    }
+   },
+   {
+    "number": "112",
+    "label": {
+     "pl": "Z komórki",
+     "en": "From a mobile"
+    }
+   }
+  ],
+  "name": {
+   "pl": "Katar",
+   "en": "Qatar"
+  },
+  "gpLabel": {
+   "pl": "5 grudnia 2027",
+   "en": "5 December 2027"
+  },
+  "place": {
+   "pl": "Lusail",
+   "en": "Lusail"
+  },
+  "warning": {
+   "pl": "Wyścig w kalendarzu 2027 oznaczony jako niepewny – sprawdź status w aplikacji.",
+   "en": "This race is marked as uncertain in the 2027 calendar – check its status in the app."
+  },
+  "sim": {
+   "pl": "Ooredoo, Vodafone Qatar – stanowiska w hali przylotów Hamad (drożej niż w mieście). Paszport. Darmowe Wi-Fi #HIAQatar.",
+   "en": "Ooredoo, Vodafone Qatar – counters in the Hamad arrivals hall (more expensive than in the city). Passport. Free Wi-Fi: #HIAQatar."
+  },
+  "transport": {
+   "pl": "Brak sprawdzonych danych z 2026 r.",
+   "en": "No verified 2026 data yet – check in the app."
+  },
+  "money": {
+   "pl": "rial katarski (QAR)",
+   "en": "Qatari riyal (QAR)"
+  },
+  "language": {
+   "pl": "arabski, powszechnie angielski",
+   "en": "Arabic, English widely spoken"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "النجدة!"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "اتصلوا بالإسعاف"
+   }
+  ],
+  "sources": {
+   "pl": "SIM: esimpass.com (08.2026)",
+   "en": "SIM: esimpass.com (08.2026)"
+  }
+ },
+ {
+  "code": "AE",
+  "region": "me",
+  "sos": [
+   {
+    "number": "999",
+    "label": {
+     "pl": "Policja",
+     "en": "Police"
+    }
+   },
+   {
+    "number": "998",
+    "label": {
+     "pl": "Pogotowie",
+     "en": "Ambulance"
+    }
+   },
+   {
+    "number": "997",
+    "label": {
+     "pl": "Straż",
+     "en": "Fire"
+    }
+   }
+  ],
+  "name": {
+   "pl": "ZEA",
+   "en": "UAE"
+  },
+  "gpLabel": {
+   "pl": "12 grudnia 2027",
+   "en": "12 December 2027"
+  },
+  "place": {
+   "pl": "Abu Zabi, Yas Marina",
+   "en": "Abu Dhabi, Yas Marina"
+  },
+  "warning": {
+   "pl": "Darmowy eSIM po kontroli paszportowej: du lub e& (10 GB na 1 dzień). Od 18 lat.",
+   "en": "Free eSIM after passport control: du or e& (10 GB for 1 day). Age 18+."
+  },
+  "sim": {
+   "pl": "Po darmowym pakiecie płatnie, np. e& 10 GB + 60 min / 28 dni za ok. 94 AED. Maks. 2 karty na paszport.",
+   "en": "After the free package you pay, e.g. e& 10 GB + 60 min / 28 days for about 94 AED. Max. 2 SIMs per passport."
+  },
+  "transport": {
+   "pl": "Careem, Uber, Yango, DiDi",
+   "en": "Careem, Uber, Yango, DiDi"
+  },
+  "money": {
+   "pl": "dirham (AED)",
+   "en": "UAE dirham (AED)"
+  },
+  "language": {
+   "pl": "arabski, powszechnie angielski",
+   "en": "Arabic, English widely spoken"
+  },
+  "phrases": [
+   {
+    "text": {
+     "pl": "Pomocy!",
+     "en": "Help!"
+    },
+    "local": "النجدة!"
+   },
+   {
+    "text": {
+     "pl": "Wezwij karetkę",
+     "en": "Call an ambulance"
+    },
+    "local": "اتصلوا بالإسعاف"
+   }
+  ],
+  "sources": {
+   "pl": "SIM: gulfnews.com (09.2025, najnowsze dostępne)",
+   "en": "SIM: gulfnews.com (09.2025, latest available)"
+  }
+ }
+]
