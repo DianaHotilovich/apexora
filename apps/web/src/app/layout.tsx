@@ -8,10 +8,22 @@ import '@fontsource/barlow/600.css';
 import { AppProvider } from '@/components/App';
 import './globals.css';
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://dianahotilovich.github.io';
+const DESCRIPTION = 'Bilet, nocleg i dojazd na każdy wyścig F1 2027 – w jednym planie, w Twojej walucie. Ticket, stay and travel for every 2027 Grand Prix.';
+
 export const metadata: Metadata = {
-  title: 'GridTrip – plan your F1 Grand Prix trip',
-  description: 'Ticket, stay and getting there for every Formula 1 race of 2027 – in one place, in your currency and language.',
-  manifest: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/manifest.json`,
+  metadataBase: new URL(SITE),
+  title: 'GridTrip – cały wyjazd na Grand Prix w jednym miejscu',
+  description: DESCRIPTION,
+  manifest: `${BASE}/manifest.json`,
+  icons: { icon: [{ url: `${BASE}/favicon.ico` }, { url: `${BASE}/icon-192.png`, type: 'image/png', sizes: '192x192' }], apple: `${BASE}/apple-touch-icon.png` },
+  openGraph: {
+    type: 'website', siteName: 'GridTrip', locale: 'pl_PL', url: `${BASE}/`,
+    title: 'GridTrip – cały wyjazd na Grand Prix w jednym miejscu', description: DESCRIPTION,
+    images: [{ url: `${BASE}/og.png`, width: 1200, height: 630, alt: 'GridTrip – przepustka na Grand Prix Węgier' }],
+  },
+  twitter: { card: 'summary_large_image', title: 'GridTrip', description: DESCRIPTION, images: [`${BASE}/og.png`] },
 };
 export const viewport: Viewport = { width: 'device-width', initialScale: 1, themeColor: '#13233f' };
 

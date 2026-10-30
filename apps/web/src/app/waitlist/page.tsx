@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { FormEvent, useState } from 'react';
 import { Top, useApp } from '@/components/App';
 import { DEMO, joinWaitlist } from '@/lib/data';
@@ -31,6 +32,7 @@ export default function Waitlist() {
           <label className="field" style={{ color: '#c4cae0' }}>{t.email}
             <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
           </label>
+          <p className="small muted">{t.waitlistConsent} <Link href="/privacy/" style={{ color: 'var(--pink)' }}>{t.privacy}</Link></p>
           <button className="btn" type="submit">{t.join}</button>
         </form>
         {msg && <p role="status">{msg}</p>}

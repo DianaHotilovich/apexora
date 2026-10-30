@@ -1,1 +1,23 @@
-{ "name": "GridTrip", "short_name": "GridTrip", "start_url": "./", "display": "standalone", "background_color": "#12172b", "theme_color": "#12172b", "icons": [] }
+{
+ "name": "GridTrip",
+ "short_name": "GridTrip",
+ "description": "Cały wyjazd na Grand Prix w jednym miejscu",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#13233f",
+ "theme_color": "#13233f",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any maskable"
+  }
+ ]
+}

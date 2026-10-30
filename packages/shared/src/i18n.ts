@@ -41,7 +41,7 @@ const pl = {
   joined: 'Dzięki! Jesteś na liście.', already: 'Ten e-mail jest już na liście.', invalidEmail: 'Wpisz poprawny adres e-mail.', demoSaved: 'Tryb demo: zapisano w tej przeglądarce.',
   error: 'Coś poszło nie tak. Spróbuj ponownie.', home: 'Start',
   featured: 'Wyścig z gotowymi pakietami', cheapest: 'najtańszy pakiet w sezonie', round: 'Runda', race: 'Wyścig', priceFrom: 'Pakiet od', yourTrip: 'Twój wyjazd', tripPass: 'Przepustka na wyjazd',
-  nextGp: 'Najbliższy Grand Prix', bestValue: 'Najtańszy pakiet sezonu', planIt: 'Zaplanuj wyjazd', salesSoon: 'Pakiety wkrótce – zobacz oficjalne bilety i przewodnik', nextTag: 'najbliższy',
+  privacy: 'Prywatność i dane', waitlistConsent: 'Zapisując się, zgadzasz się na jedną wiadomość o starcie bety. Szczegóły:', nextGp: 'Najbliższy Grand Prix', bestValue: 'Najtańszy pakiet sezonu', planIt: 'Zaplanuj wyjazd', salesSoon: 'Pakiety wkrótce – zobacz oficjalne bilety i przewodnik', nextTag: 'najbliższy',
   findStay: 'Szukasz innego noclegu?', findStayText: 'Wybierz daty i budżet – otworzymy wyniki już z tymi filtrami.', checkIn: 'Przyjazd', checkOut: 'Wyjazd', maxNight: 'Maks. za noc (EUR)', guests: 'Osoby', searchOn: 'Szukaj w', stayNote: 'Rezerwujesz bezpośrednio na stronie partnera. Ceny i dostępność widzisz tam.',
 };
 
@@ -88,7 +88,7 @@ const en: Dict = {
   joined: 'Thanks! You are on the list.', already: 'This e-mail is already on the list.', invalidEmail: 'Enter a valid e-mail address.', demoSaved: 'Demo mode: saved in this browser.',
   error: 'Something went wrong. Please try again.', home: 'Home',
   featured: 'Race with ready packages', cheapest: 'cheapest package this season', round: 'Round', race: 'Race', priceFrom: 'Package from', yourTrip: 'Your trip', tripPass: 'Trip pass',
-  nextGp: 'Next Grand Prix', bestValue: 'Cheapest package this season', planIt: 'Plan the trip', salesSoon: 'Packages coming soon – see official tickets and the guide', nextTag: 'next',
+  privacy: 'Privacy and data', waitlistConsent: 'By joining you agree to one message about the beta launch. Details:', nextGp: 'Next Grand Prix', bestValue: 'Cheapest package this season', planIt: 'Plan the trip', salesSoon: 'Packages coming soon – see official tickets and the guide', nextTag: 'next',
   findStay: 'Looking for a different stay?', findStayText: 'Pick dates and budget – results open with these filters already set.', checkIn: 'Check-in', checkOut: 'Check-out', maxNight: 'Max per night (EUR)', guests: 'Guests', searchOn: 'Search on', stayNote: 'You book directly on the partner’s site. Prices and availability are shown there.',
 };
 
