@@ -23,7 +23,7 @@ const step = async (name, fn) => { await fn(); console.log('ok', name); };
 try {
   await step('home', () => page.goto(base + '/'));
   await step('races', async () => { await page.click('text=Wybierz wyścig'); await page.fill('input', 'Węg'); });
-  await step('level', async () => { await page.click('text=GP Węgier'); await page.waitForURL(/hungary-2027\/?$/); });
+  await step('level', async () => { await page.click('.tower >> text=Węgry'); await page.waitForURL(/hungary-2027\/?$/); });
   await step('package', async () => { await page.click('text=Średni'); await page.waitForSelector('text=Trybuna FAN Weekend'); });
   await step('pay', async () => { await page.click('text=Przejdź do płatności'); await page.click('button.btn'); await page.waitForURL(/trip/); });
   await step('checklist', async () => { await page.click('.check >> nth=0'); await page.waitForSelector('text=1/11'); });

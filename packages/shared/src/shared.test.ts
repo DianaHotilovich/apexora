@@ -74,3 +74,18 @@ describe('checklist', () => {
     expect(checklistFor('AE', '2027-12-12', 'pl').map((i) => i.id)).not.toContain('sun');
   });
 });
+
+import { bookingUrl, airbnbUrl, defaultStay } from './stay';
+describe('stay deep links', () => {
+  it('builds dated, filtered Booking and Airbnb searches', () => {
+    const d = defaultStay('2027-08-01');
+    expect(d).toEqual({ checkIn: '2027-07-30', checkOut: '2027-08-02' });
+    const b = new URL(bookingUrl({ city: 'Budapest', ...d, guests: 2, maxPerNightEur: 120 }));
+    expect(b.searchParams.get('checkin')).toBe('2027-07-30');
+    expect(b.searchParams.get('group_adults')).toBe('2');
+    expect(b.searchParams.get('nflt')).toBe('price=EUR-min-120-1');
+    const a = new URL(airbnbUrl({ city: 'Budapest', ...d, guests: 2, maxPerNightEur: 120 }));
+    expect(a.pathname).toBe('/s/Budapest/homes');
+    expect(a.searchParams.get('price_max')).toBe('120');
+  });
+});

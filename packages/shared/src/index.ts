@@ -17,3 +17,4 @@ export function getGuide(code: string): Guide | undefined {
   return GUIDES.find((g) => g.code === code.toUpperCase());
 }
 export * from './i18n';
+export * from './stay';

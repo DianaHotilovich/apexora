@@ -44,7 +44,7 @@ export default function Pay() {
   const option = (m: PaymentMethod, title: string, text: string, disabled = false) => (
     <label className={`card radio${method === m ? ' selected' : ''}${disabled ? ' disabled' : ''}`}>
       <input type="radio" name="pay" checked={method === m} disabled={disabled} onChange={() => setMethod(m)} />
-      <span className="stack" style={{ gap: 4 }}><b style={{ fontSize: 16 }}>{title}</b><span className="small muted">{text}</span></span>
+      <span className="stack" style={{ gap: 4 }}><span className="rt">{title}</span><span className="small muted">{text}</span></span>
     </label>
   );
 

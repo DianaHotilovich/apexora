@@ -40,6 +40,8 @@ const pl = {
   joinTitle: 'Zapisz się na betę', joinText: 'Beta startuje 1 lutego 2027. Zero spamu – tylko informacje o GridTrip.', email: 'Twój e-mail', join: 'Chcę testować betę',
   joined: 'Dzięki! Jesteś na liście.', already: 'Ten e-mail jest już na liście.', invalidEmail: 'Wpisz poprawny adres e-mail.', demoSaved: 'Tryb demo: zapisano w tej przeglądarce.',
   error: 'Coś poszło nie tak. Spróbuj ponownie.', home: 'Start',
+  featured: 'Wyścig z gotowymi pakietami', cheapest: 'najtańszy pakiet w sezonie', round: 'Runda', race: 'Wyścig', priceFrom: 'Pakiet od', yourTrip: 'Twój wyjazd', tripPass: 'Przepustka na wyjazd',
+  findStay: 'Szukasz innego noclegu?', findStayText: 'Wybierz daty i budżet – otworzymy wyniki już z tymi filtrami.', checkIn: 'Przyjazd', checkOut: 'Wyjazd', maxNight: 'Maks. za noc (EUR)', guests: 'Osoby', searchOn: 'Szukaj w', stayNote: 'Rezerwujesz bezpośrednio na stronie partnera. Ceny i dostępność widzisz tam.',
 };
 
 export type Dict = typeof pl;
@@ -84,6 +86,8 @@ const en: Dict = {
   joinTitle: 'Join the beta', joinText: 'The beta starts on 1 February 2027. No spam – only GridTrip news.', email: 'Your e-mail', join: 'I want to test the beta',
   joined: 'Thanks! You are on the list.', already: 'This e-mail is already on the list.', invalidEmail: 'Enter a valid e-mail address.', demoSaved: 'Demo mode: saved in this browser.',
   error: 'Something went wrong. Please try again.', home: 'Home',
+  featured: 'Race with ready packages', cheapest: 'cheapest package this season', round: 'Round', race: 'Race', priceFrom: 'Package from', yourTrip: 'Your trip', tripPass: 'Trip pass',
+  findStay: 'Looking for a different stay?', findStayText: 'Pick dates and budget – results open with these filters already set.', checkIn: 'Check-in', checkOut: 'Check-out', maxNight: 'Max per night (EUR)', guests: 'Guests', searchOn: 'Search on', stayNote: 'You book directly on the partner’s site. Prices and availability are shown there.',
 };
 
 export const DICT: Record<Lang, Dict> = { pl, en };

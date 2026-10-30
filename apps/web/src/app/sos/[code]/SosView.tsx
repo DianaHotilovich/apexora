@@ -25,12 +25,12 @@ export default function SosView({ code }: { code: string }) {
           </div>
         )}
         <div className="card">
-          <div className="eyebrow">{t.myHotel}</div>
+          <div className="section-title">{t.myHotel}</div>
           <label className="field"><span className="sr">{t.myHotel}</span>
             <textarea value={hotel} placeholder={t.hotelPh} onChange={(e) => { setHotel(e.target.value); save(`hotel-${code}`, e.target.value); }} style={{ fontSize: 18 }} />
           </label>
         </div>
-        <div className="stat" style={{ gap: 0 }}>
+        <div className="card" style={{ background: 'var(--navy2)', color: '#fff', gap: 0 }}>
           {g.phrases.map((p) => (
             <div key={p.local} className="phrase"><span className="muted">{p.text[lang]}</span><b>{p.local}</b></div>
           ))}
