@@ -18,6 +18,12 @@ export const RATES_SNAPSHOT: Rates = {
     CHF: 0.9194,
     CAD: 1.5606,
     CZK: 24.353,
+    AUD: 1.5904,
+    BRL: 6.0692,
+    MXN: 21.1237,
+    SGD: 1.4282,
+    TRY: 55.8015,
+    CNY: 7.4326,
   },
 };
 
