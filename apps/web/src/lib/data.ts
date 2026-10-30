@@ -1,5 +1,5 @@
 import {
-  checklistFor, getGuide, getRace, GUIDES, Lang, Level, methodsFor, OFFERS, offersForRace, PaymentMethod, RACES,
+  checklistFor, fetchLiveRates, getGuide, getRace, GUIDES, Lang, Level, methodsFor, OFFERS, offersForRace, PaymentMethod, RACES,
   Rates, RATES_SNAPSHOT, suggestTrip, summarizeTrip, TripItem, TripSummary,
 } from '@gridtrip/shared';
 import { load, save } from './store';
@@ -30,17 +30,17 @@ export const checklist = (code: string, date: string, lang: Lang) => checklistFo
 export const paymentMethods = (country: string) => methodsFor(country);
 export const offerById = (id: string) => OFFERS.find((o) => o.id === id);
 
+/** Exchange rates refresh on their own: API if configured, otherwise straight from the ECB feed; last good rates are kept for offline use. */
 export async function rates(): Promise<Rates & { live: boolean }> {
-  if (!DEMO) {
-    try {
-      const r = await api<Rates & { live: boolean }>('/rates');
-      save('rates', r);
-      return r;
-    } catch {
-      /* offline: fall through */
-    }
+  try {
+    const r = DEMO ? { ...(await fetchLiveRates()), live: true } : await api<Rates & { live: boolean }>('/rates');
+    if (r.live) save('rates', r);
+    return r;
+  } catch {
+    /* offline: fall through to the last saved rates */
   }
-  return { ...(load<Rates>('rates') ?? RATES_SNAPSHOT), live: false };
+  const cached = load<Rates>('rates');
+  return { ...(cached && cached.date > RATES_SNAPSHOT.date ? cached : RATES_SNAPSHOT), live: false };
 }
 
 export function suggest(raceId: string, level: Level, r: Rates): TripItem[] {

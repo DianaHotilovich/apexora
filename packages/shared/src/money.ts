@@ -32,3 +32,20 @@ export function formatMoney(amount: number, currency: string, locale = 'pl-PL'):
     style: 'currency', currency, minimumFractionDigits: digits, maximumFractionDigits: digits,
   }).format(value);
 }
+
+/**
+ * Live ECB reference rates via frankfurter.app (free, no key, CORS-enabled).
+ * Used by the web app, the mobile app and the API, so rates refresh on their own every working day.
+ */
+export async function fetchLiveRates(fetchFn: typeof fetch = fetch, timeoutMs = 5000): Promise<Rates> {
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), timeoutMs);
+  try {
+    const res = await fetchFn('https://api.frankfurter.app/latest?from=EUR', { signal: ctrl.signal });
+    if (!res.ok) throw new Error(`rates ${res.status}`);
+    const body = (await res.json()) as { date: string; rates: Record<string, number> };
+    return { base: 'EUR', date: body.date, source: `ECB euro reference rates, ${body.date}`, rates: { EUR: 1, ...body.rates } };
+  } finally {
+    clearTimeout(timer);
+  }
+}
