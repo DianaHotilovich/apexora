@@ -123,6 +123,7 @@ export default function App() {
           <Btn variant="link" onPress={() => go({ name: 'guides' })}>{t.guidesFirst}</Btn>
           <Btn variant="link" onPress={() => go({ name: 'currency' })}>{t.converter}</Btn>
         </View>
+        <Text style={[s.meta, { fontSize: 12 }]}>{t.unofficial}</Text>
       </>
     );
   } else if (screen.name === 'races') {
