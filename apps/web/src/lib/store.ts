@@ -1,5 +1,5 @@
 /** Small localStorage helpers that never throw (private mode, blocked storage). */
-const PREFIX = 'gridtrip:';
+const PREFIX = 'apexora:';
 
 export function load<T>(key: string): T | null {
   try {

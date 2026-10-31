@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { convert, formatMoney, hasRate } from '@gridtrip/shared';
+import { convert, formatMoney, hasRate } from '@apexora/shared';
 import { Top, useApp } from '@/components/App';
 
 export default function Currency() {

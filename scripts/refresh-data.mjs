@@ -27,7 +27,7 @@ for (const f of ['packages/shared/src/data/offers.ts', 'packages/shared/src/data
 const broken = [];
 for (const url of urls) {
   try {
-    const r = await fetch(url, { redirect: 'follow', signal: AbortSignal.timeout(15000), headers: { 'User-Agent': 'Mozilla/5.0 GridTrip link check' } });
+    const r = await fetch(url, { redirect: 'follow', signal: AbortSignal.timeout(15000), headers: { 'User-Agent': 'Mozilla/5.0 Apexora link check' } });
     // 401/403/429: the site blocks bots – not proof the page is gone.
     if (r.status >= 400 && ![401, 403, 429].includes(r.status)) broken.push(`${r.status} ${url}`);
   } catch (e) {
@@ -36,6 +36,6 @@ for (const url of urls) {
 }
 report.push(`Links checked: ${urls.size}. Not opening: ${broken.length}.`);
 if (broken.length) report.push('', 'Check these offers – the price or the page may have changed:', ...broken.map((b) => `- ${b}`));
-writeFileSync('data-report.md', `# GridTrip data check ${new Date().toISOString().slice(0, 10)}\n\n${report.join('\n')}\n`);
+writeFileSync('data-report.md', `# Apexora data check ${new Date().toISOString().slice(0, 10)}\n\n${report.join('\n')}\n`);
 console.log(report.join('\n'));
 if (process.env.GITHUB_OUTPUT) writeFileSync(process.env.GITHUB_OUTPUT, `broken=${broken.length}\n`, { flag: 'a' });

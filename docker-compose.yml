@@ -2,13 +2,13 @@
 services:
   db:
     image: postgres:16-alpine
-    environment: { POSTGRES_USER: gridtrip, POSTGRES_PASSWORD: gridtrip, POSTGRES_DB: gridtrip }
+    environment: { POSTGRES_USER: apexora, POSTGRES_PASSWORD: apexora, POSTGRES_DB: apexora }
     volumes: [db:/var/lib/postgresql/data]
-    healthcheck: { test: ["CMD-SHELL", "pg_isready -U gridtrip"], interval: 3s, retries: 20 }
+    healthcheck: { test: ["CMD-SHELL", "pg_isready -U apexora"], interval: 3s, retries: 20 }
   api:
     build: { context: ., dockerfile: apps/api/Dockerfile }
     environment:
-      DATABASE_URL: postgres://gridtrip:gridtrip@db:5432/gridtrip
+      DATABASE_URL: postgres://apexora:apexora@db:5432/apexora
       CORS_ORIGIN: http://localhost:3000
       ADYEN_API_KEY: ${ADYEN_API_KEY:-}
       ADYEN_MERCHANT_ACCOUNT: ${ADYEN_MERCHANT_ACCOUNT:-}

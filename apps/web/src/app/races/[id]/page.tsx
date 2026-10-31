@@ -1,4 +1,4 @@
-import { RACES } from '@gridtrip/shared';
+import { RACES } from '@apexora/shared';
 import LevelChoice from './LevelChoice';
 
 export function generateStaticParams() {

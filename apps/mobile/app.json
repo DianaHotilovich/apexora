@@ -1,17 +1,17 @@
 {
   "expo": {
-    "name": "GridTrip",
-    "slug": "gridtrip",
+    "name": "Apexora",
+    "slug": "apexora",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "backgroundColor": "#12172B",
     "ios": {
-      "bundleIdentifier": "app.gridtrip",
+      "bundleIdentifier": "app.apexora",
       "supportsTablet": false
     },
     "android": {
-      "package": "app.gridtrip",
+      "package": "app.apexora",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#13233F"

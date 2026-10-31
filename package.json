@@ -1,15 +1,15 @@
 {
-  "name": "gridtrip",
+  "name": "apexora",
   "private": true,
   "version": "1.0.0",
-  "description": "GridTrip – plan a whole Formula 1 Grand Prix trip in one place",
+  "description": "Apexora – plan a whole Formula 1 Grand Prix trip in one place",
   "workspaces": ["packages/shared", "apps/api", "apps/web"],
   "scripts": {
-    "build:shared": "npm run build -w @gridtrip/shared",
-    "test": "npm run test -w @gridtrip/shared && npm run test -w @gridtrip/api",
-    "dev:api": "npm run start:dev -w @gridtrip/api",
-    "dev:web": "npm run dev -w @gridtrip/web",
-    "build": "npm run build -w @gridtrip/shared && npm run build -w @gridtrip/api && npm run build -w @gridtrip/web"
+    "build:shared": "npm run build -w @apexora/shared",
+    "test": "npm run test -w @apexora/shared && npm run test -w @apexora/api",
+    "dev:api": "npm run start:dev -w @apexora/api",
+    "dev:web": "npm run dev -w @apexora/web",
+    "build": "npm run build -w @apexora/shared && npm run build -w @apexora/api && npm run build -w @apexora/web"
   },
   "engines": { "node": ">=20" }
 }

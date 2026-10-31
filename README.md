@@ -1,10 +1,10 @@
-# GridTrip
+# Apexora
 
-**Live demo: https://dianahotilovich.github.io/gridtrip/**
+**Live demo: https://dianahotilovich.github.io/apexora/**
 
 **Plan a whole Formula 1 Grand Prix trip in one place: ticket, stay and getting there, matched to your budget, in your currency and language.**
 
-GridTrip is a portfolio and university project (VIZJA, *Zarządzanie projektem produktu cyfrowego*, 2026). It covers the full 2027 F1 calendar (24 races), three budget levels, real sourced offers, flexible payments and offline country guides for the race weekend.
+Apexora is a portfolio and university project (VIZJA, *Zarządzanie projektem produktu cyfrowego*, 2026). It covers the full 2027 F1 calendar (24 races), three budget levels, real sourced offers, flexible payments and offline country guides for the race weekend.
 
 ![Web app screens](docs/web-screens.png)
 
@@ -36,7 +36,7 @@ apps/web          Next.js 15 / React 19, static export, PWA with offline service
 apps/mobile       Expo (React Native), AsyncStorage offline cache
 ```
 
-The web and mobile apps share all business logic through `@gridtrip/shared`, so prices, payment rules and checklists are identical everywhere. The web app runs in **demo mode** (fully in the browser, no server) or against the API when `NEXT_PUBLIC_API_URL` is set.
+The web and mobile apps share all business logic through `@apexora/shared`, so prices, payment rules and checklists are identical everywhere. The web app runs in **demo mode** (fully in the browser, no server) or against the API when `NEXT_PUBLIC_API_URL` is set.
 
 ## Run it
 
@@ -77,7 +77,7 @@ Configuration: see [.env.example](.env.example).
 
 ```bash
 npm test                                   # shared logic (vitest) + API end-to-end (node:test + supertest, real Postgres engine)
-npm run build -w @gridtrip/web && npm run test:e2e -w @gridtrip/web   # browser flow: race -> package -> payment -> checklist -> SOS
+npm run build -w @apexora/web && npm run test:e2e -w @apexora/web   # browser flow: race -> package -> payment -> checklist -> SOS
 cd apps/mobile && npx tsc --noEmit         # mobile type-check
 ```
 

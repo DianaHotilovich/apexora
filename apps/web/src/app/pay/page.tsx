@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { convert, formatMoney, Level, PaymentMethod, savingsPlan, summarizeTrip, TripItem } from '@gridtrip/shared';
+import { convert, formatMoney, Level, PaymentMethod, savingsPlan, summarizeTrip, TripItem } from '@apexora/shared';
 import { Money, Top, useApp } from '@/components/App';
 import { createAndPay, DEMO, paymentMethods, race } from '@/lib/data';
 import { load } from '@/lib/store';

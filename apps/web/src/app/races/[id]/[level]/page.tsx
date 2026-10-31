@@ -1,4 +1,4 @@
-import { RACES } from '@gridtrip/shared';
+import { RACES } from '@apexora/shared';
 import PackageView from './PackageView';
 
 export function generateStaticParams() {
