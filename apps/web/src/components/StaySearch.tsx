@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { airbnbUrl, bookingUrl, defaultStay, searchCity } from '@gridtrip/shared';
+import { airbnbUrl, bookingUrl, defaultStay, searchCity } from '@apexora/shared';
 import { useApp } from '@/components/App';
 
 /** Pick dates and a nightly budget, then open Booking.com or Airbnb with those filters already applied. */

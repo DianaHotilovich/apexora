@@ -1,4 +1,4 @@
-import { GUIDES } from '@gridtrip/shared';
+import { GUIDES } from '@apexora/shared';
 import GuideView from './GuideView';
 
 export function generateStaticParams() {

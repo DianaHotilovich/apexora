@@ -2,7 +2,7 @@ import { Race } from '../types';
 
 const F1 = 'https://ticketing.formula1.com';
 
-/** 2027 Formula 1 calendar as used in the GridTrip research (status: October 2026). */
+/** 2027 Formula 1 calendar as used in the Apexora research (status: October 2026). */
 export const RACES: Race[] = [
   { id: 'bahrain-2027', round: 1, name: { pl: 'GP Bahrajnu', en: 'Bahrain GP' }, countryCode: 'BH', circuit: 'Bahrain International Circuit', city: 'Sakhir', date: '2027-03-14', status: 'uncertain', officialTicketsUrl: F1 },
   { id: 'saudi-2027', round: 2, name: { pl: 'GP Arabii Saudyjskiej', en: 'Saudi Arabian GP' }, countryCode: 'SA', circuit: 'Jeddah Corniche Circuit', city: 'Dżudda', date: '2027-03-21', status: 'uncertain', officialTicketsUrl: F1 },

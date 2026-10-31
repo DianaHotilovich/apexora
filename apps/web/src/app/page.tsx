@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { daysUntil, getGuide, nextRace, Race, RACES, summarizeTrip } from '@gridtrip/shared';
+import { daysUntil, getGuide, nextRace, Race, RACES, summarizeTrip } from '@apexora/shared';
 import { Money, Top, useApp } from '@/components/App';
 import { suggest } from '@/lib/data';
 

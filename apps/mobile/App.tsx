@@ -11,13 +11,13 @@ import {
   airbnbUrl, bookingUrl, checklistFor, convert, fetchLiveRates, daysUntil, defaultStay, DICT, formatMoney, getGuide, getRace, GUIDES, hasRate,
   Lang, Level, methodsFor, nextRace, PaymentMethod, Race, RACES, Rates, RATES_SNAPSHOT, savingsPlan, searchCity, suggestTrip,
   summarizeTrip, TripItem,
-} from '@gridtrip/shared';
+} from '@apexora/shared';
 
 /**
- * GridTrip mobile (Expo). Same data, logic and brand as the web app (@gridtrip/shared).
+ * Apexora mobile (Expo). Same data, logic and brand as the web app (@apexora/shared).
  * Brand: kerb stripes, slanted condensed headlines, the calendar as a timing tower, the trip as a paddock pass.
  * Offline: trip, checklist progress, hotel address and last exchange rates are kept in AsyncStorage.
- * With EXPO_PUBLIC_API_URL set, exchange rates are refreshed from the GridTrip API.
+ * With EXPO_PUBLIC_API_URL set, exchange rates are refreshed from the Apexora API.
  */
 const API = process.env.EXPO_PUBLIC_API_URL;
 const C = {
@@ -34,8 +34,8 @@ type Screen =
 interface Trip { raceId: string; level: Level; items: TripItem[]; status: 'paid' | 'scheduled' | 'payment_pending'; done: string[] }
 
 const store = {
-  async get<T>(k: string): Promise<T | null> { try { const v = await AsyncStorage.getItem(`gridtrip:${k}`); return v ? JSON.parse(v) : null; } catch { return null; } },
-  async set(k: string, v: unknown) { try { await AsyncStorage.setItem(`gridtrip:${k}`, JSON.stringify(v)); } catch { /* ignore */ } },
+  async get<T>(k: string): Promise<T | null> { try { const v = await AsyncStorage.getItem(`apexora:${k}`); return v ? JSON.parse(v) : null; } catch { return null; } },
+  async set(k: string, v: unknown) { try { await AsyncStorage.setItem(`apexora:${k}`, JSON.stringify(v)); } catch { /* ignore */ } },
 };
 const today = () => new Date().toISOString().slice(0, 10);
 
@@ -80,7 +80,7 @@ export default function App() {
 
   const header = (label?: string, dark = false) => (
     <View style={s.top}>
-      {stack.length > 1 ? <Round onPress={back} dark={dark} label={t.back} /> : <Text style={[s.logo, dark && { color: '#fff' }]}>Grid<Text style={{ color: dark ? C.pink : C.red }}>Trip</Text></Text>}
+      {stack.length > 1 ? <Round onPress={back} dark={dark} label={t.back} /> : <Text style={[s.logo, dark && { color: '#fff' }]}>Apex<Text style={{ color: dark ? C.pink : C.red }}>ora</Text></Text>}
       <Text style={[s.step, { flex: 1 }, dark && { color: C.soft }]} numberOfLines={1}>{label ?? ''}</Text>
       <Chip dark={dark} onPress={() => { const l = lang === 'pl' ? 'en' : 'pl'; setLang(l); store.set('lang', l); }}>{lang.toUpperCase()}</Chip>
       <Chip dark={dark} onPress={() => { const order = ['PLN', 'EUR', 'USD', 'GBP']; const c = order[(order.indexOf(currency) + 1) % order.length]; setCurrency(c); store.set('currency', c); }}>{currency}</Chip>

@@ -1,6 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { PaymentMethod } from '@gridtrip/shared';
-export { methodsFor, BNPL_BY_COUNTRY } from '@gridtrip/shared';
+import { PaymentMethod } from '@apexora/shared';
+export { methodsFor, BNPL_BY_COUNTRY } from '@apexora/shared';
 
 export interface PaymentResult { provider: string; providerRef: string; status: 'authorised' | 'pending' | 'scheduled'; redirectUrl?: string }
 
@@ -15,7 +15,7 @@ export class PaymentsService {
   async charge(method: PaymentMethod, amountMinor: number, currency: string, reference: string): Promise<PaymentResult> {
     const key = process.env.ADYEN_API_KEY;
     const account = process.env.ADYEN_MERCHANT_ACCOUNT;
-    if (method === 'save_up') return { provider: 'gridtrip', providerRef: `save-${reference}`, status: 'scheduled' };
+    if (method === 'save_up') return { provider: 'apexora', providerRef: `save-${reference}`, status: 'scheduled' };
     if (!key || !account) {
       return { provider: 'test', providerRef: `test-${reference}`, status: method === 'pay_now' ? 'authorised' : 'pending' };
     }

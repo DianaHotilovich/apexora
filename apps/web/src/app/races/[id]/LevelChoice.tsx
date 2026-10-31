@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { getGuide, Level, summarizeTrip } from '@gridtrip/shared';
+import { getGuide, Level, summarizeTrip } from '@apexora/shared';
 import { Money, Top, useApp } from '@/components/App';
 import { race, suggest } from '@/lib/data';
 import { RaceAlert } from '@/components/RaceAlert';

@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { GUIDES } from '@gridtrip/shared';
+import { GUIDES } from '@apexora/shared';
 import { Top, useApp } from '@/components/App';
 
 export default function Guides() {

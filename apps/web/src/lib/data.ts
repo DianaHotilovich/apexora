@@ -1,12 +1,12 @@
 import {
   checklistFor, fetchLiveRates, getGuide, getRace, GUIDES, Lang, Level, methodsFor, OFFERS, offersForRace, PaymentMethod, RACES,
   Rates, RATES_SNAPSHOT, suggestTrip, summarizeTrip, TripItem, TripSummary,
-} from '@gridtrip/shared';
+} from '@apexora/shared';
 import { load, save } from './store';
 
 /**
  * Data access for the web app.
- * With NEXT_PUBLIC_API_URL the app talks to the GridTrip API; without it, it runs in demo mode
+ * With NEXT_PUBLIC_API_URL the app talks to the Apexora API; without it, it runs in demo mode
  * on the same shared data and logic, entirely in the browser (and offline).
  */
 const API = process.env.NEXT_PUBLIC_API_URL?.replace(/\/$/, '');

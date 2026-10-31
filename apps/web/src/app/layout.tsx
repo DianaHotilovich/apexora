@@ -14,16 +14,16 @@ const DESCRIPTION = 'Bilet, nocleg i dojazd na każdy wyścig F1 2027 – w jedn
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
-  title: 'GridTrip – cały wyjazd na Grand Prix w jednym miejscu',
+  title: 'Apexora – cały wyjazd na Grand Prix w jednym miejscu',
   description: DESCRIPTION,
   manifest: `${BASE}/manifest.json`,
   icons: { icon: [{ url: `${BASE}/favicon.ico` }, { url: `${BASE}/icon-192.png`, type: 'image/png', sizes: '192x192' }], apple: `${BASE}/apple-touch-icon.png` },
   openGraph: {
-    type: 'website', siteName: 'GridTrip', locale: 'pl_PL', url: `${BASE}/`,
-    title: 'GridTrip – cały wyjazd na Grand Prix w jednym miejscu', description: DESCRIPTION,
-    images: [{ url: `${BASE}/og.png`, width: 1200, height: 630, alt: 'GridTrip – przepustka na Grand Prix Węgier' }],
+    type: 'website', siteName: 'Apexora', locale: 'pl_PL', url: `${BASE}/`,
+    title: 'Apexora – cały wyjazd na Grand Prix w jednym miejscu', description: DESCRIPTION,
+    images: [{ url: `${BASE}/og.png`, width: 1200, height: 630, alt: 'Apexora – przepustka na Grand Prix Węgier' }],
   },
-  twitter: { card: 'summary_large_image', title: 'GridTrip', description: DESCRIPTION, images: [`${BASE}/og.png`] },
+  twitter: { card: 'summary_large_image', title: 'Apexora', description: DESCRIPTION, images: [`${BASE}/og.png`] },
 };
 export const viewport: Viewport = { width: 'device-width', initialScale: 1, themeColor: '#13233f' };
 

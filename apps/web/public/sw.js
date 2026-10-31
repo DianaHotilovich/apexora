@@ -1,5 +1,5 @@
 // Offline support: cache every page, PDF and asset the user opens (network first, cache as fallback).
-const CACHE = 'gridtrip-v1';
+const CACHE = 'apexora-v1';
 self.addEventListener('install', () => self.skipWaiting());
 self.addEventListener('activate', (e) => e.waitUntil(self.clients.claim()));
 self.addEventListener('fetch', (e) => {
