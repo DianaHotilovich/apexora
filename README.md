@@ -92,3 +92,7 @@ This website is unofficial and is not associated in any way with the Formula 1 c
 ## Mobile
 
 ![Mobile screens](docs/mobile-screens.png)
+
+## License
+
+All rights reserved – see [LICENSE](LICENSE). The code is public for portfolio review only.
