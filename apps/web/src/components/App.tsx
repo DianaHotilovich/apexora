@@ -96,3 +96,9 @@ export function Top({ back, label }: { back?: string; label?: string }) {
     </div>
   );
 }
+
+/** Required by the F1 brand guidelines for unofficial sites: a footer disclaimer on every page. */
+export function Disclaimer() {
+  const { t } = useApp();
+  return <footer className="disclaimer">{t.unofficial}</footer>;
+}

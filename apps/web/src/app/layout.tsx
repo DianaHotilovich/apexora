@@ -5,7 +5,7 @@ import '@fontsource/barlow-condensed/700.css';
 import '@fontsource/barlow-condensed/800-italic.css';
 import '@fontsource/barlow/400.css';
 import '@fontsource/barlow/600.css';
-import { AppProvider } from '@/components/App';
+import { AppProvider, Disclaimer } from '@/components/App';
 import './globals.css';
 
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
@@ -32,7 +32,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="pl">
       <body>
         <div className="kerb" aria-hidden="true" />
-        <AppProvider>{children}</AppProvider>
+        <AppProvider>{children}<Disclaimer /></AppProvider>
       </body>
     </html>
   );

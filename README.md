@@ -87,7 +87,7 @@ CI runs all of the above on every push (`.github/workflows/ci.yml`).
 
 Offers and prices come from public pages of ticket sellers and tour operators, each stored with its source and check date (October 2026); estimates are labelled as estimates. Exchange rates: ECB reference rates via Frankfurter, with an ECB snapshot from 30.10.2026 for offline use. Country guides: official emergency-service and operator pages, October 2026.
 
-GridTrip is not affiliated with Formula 1. F1 and related marks belong to Formula One Licensing B.V.
+This website is unofficial and is not associated in any way with the Formula 1 companies. F1, FORMULA ONE, FORMULA 1 and related marks are trade marks of Formula One Licensing B.V.
 
 ## Mobile
 
