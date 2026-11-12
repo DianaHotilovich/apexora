@@ -36,6 +36,11 @@ export default function Home() {
       <section className="hero">
         <h1 className="hero-title">{t.heroTitle}</h1>
         <p className="muted" style={{ fontSize: 17 }}>{t.heroText}</p>
+        <div className="what">
+          <b>{t.heroWhat}</b>
+          <ul>{t.heroPoints.map((x) => <li key={x}>{x}</li>)}</ul>
+          <span className="small">{t.heroDemo}</span>
+        </div>
         {next && today && (
           <Link href={`/races/${next.id}/`} className="next">
             <span className="label">{t.nextGp}</span>

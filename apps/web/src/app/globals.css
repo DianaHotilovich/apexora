@@ -171,3 +171,8 @@ a.card:hover { border-left-color: var(--red); color: var(--navy); }
 .hero .next .muted { color: var(--muted); }
 .disclaimer { max-width: 520px; margin: 0 auto; padding: 4px 20px 24px; font-size: 12px; line-height: 1.45; color: var(--muted); }
 .dark + .disclaimer, .disclaimer { background: transparent; }
+
+.what { display: flex; flex-direction: column; gap: 6px; font-size: 15px; color: #fff; border-left: 3px solid var(--pink); padding-left: 12px; }
+.what b { font-family: var(--display); font-weight: 700; font-size: 18px; letter-spacing: .01em; }
+.what ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; color: var(--soft); }
+.what .small { color: var(--soft); opacity: .85; }
