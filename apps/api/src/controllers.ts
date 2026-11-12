@@ -4,7 +4,7 @@ import { z, ZodSchema } from 'zod';
 import {
   checklistFor, getGuide, getRace, GUIDES, Lang, Level, MissingRateError, OFFERS, offersForRace, RACES,
   suggestTrip, summarizeTrip,
-} from '@apexora/shared';
+} from '@driftora/shared';
 import { Db, payments, raceAlerts, trips, waitlist } from './db';
 import { methodsFor, PaymentsService } from './payments.service';
 import { RatesService } from './rates.service';
@@ -172,7 +172,7 @@ export class WaitlistController {
 export class RaceAlertsController {
   constructor(private readonly db: Db) {}
 
-  /** Sign up for one e-mail when ticket sales or Apexora packages open for a race. */
+  /** Sign up for one e-mail when ticket sales or Driftora packages open for a race. */
   @Post()
   async create(@Body() body: unknown) {
     const b = parse(z.object({ email: z.string().email().max(200), raceId: z.string().max(64), language: z.enum(['pl', 'en']).default('pl') }), body);

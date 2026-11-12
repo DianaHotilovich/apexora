@@ -5,7 +5,7 @@ import { Top, useApp } from '@/components/App';
 const TEXT = {
   pl: {
     title: 'Prywatność i dane osobowe',
-    intro: 'Apexora to projekt studencki. Zbieram tylko dane, które są potrzebne do badania i listy oczekujących.',
+    intro: 'Driftora to projekt studencki. Zbieram tylko dane, które są potrzebne do badania i listy oczekujących.',
     blocks: [
       ['Kto jest administratorem', 'Diana Hotilovich, studentka inżynierii oprogramowania na Uniwersytecie VIZJA w Warszawie. Kontakt: przez profil projektu github.com/DianaHotilovich albo odpowiedź na wiadomość, z której masz link.'],
       ['Jakie dane', 'Ankieta: Twoje odpowiedzi i – tylko jeśli go podasz – adres e-mail. Lista oczekujących: adres e-mail i język. Nie zbieram imienia, nazwiska, numeru telefonu ani lokalizacji.'],
@@ -18,7 +18,7 @@ const TEXT = {
   },
   en: {
     title: 'Privacy and personal data',
-    intro: 'Apexora is a student project. I collect only the data needed for the research and the waitlist.',
+    intro: 'Driftora is a student project. I collect only the data needed for the research and the waitlist.',
     blocks: [
       ['Who is responsible', 'Diana Hotilovich, a software engineering student at VIZJA University in Warsaw. Contact: through the project profile github.com/DianaHotilovich or by replying to the message that gave you the link.'],
       ['What data', 'Survey: your answers and – only if you give it – your e-mail. Waitlist: your e-mail and language. I do not collect names, phone numbers or location.'],

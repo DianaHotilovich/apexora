@@ -1,5 +1,5 @@
 // Offline support: cache every page, PDF and asset the user opens (network first, cache as fallback).
-const CACHE = 'apexora-v1';
+const CACHE = 'driftora-v1';
 self.addEventListener('install', () => self.skipWaiting());
 self.addEventListener('activate', (e) => e.waitUntil(self.clients.claim()));
 self.addEventListener('fetch', (e) => {

@@ -15,7 +15,7 @@ jobs:
         with: { node-version: 22, cache: npm }
       - run: npm ci
       - run: npm run build:shared
-      - run: npm run build -w @apexora/web
+      - run: npm run build -w @driftora/web
         env: { NEXT_BASE_PATH: '/${{ github.event.repository.name }}' }
       - run: touch apps/web/out/.nojekyll
       - uses: actions/configure-pages@v5

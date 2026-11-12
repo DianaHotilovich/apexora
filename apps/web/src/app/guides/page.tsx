@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { GUIDES } from '@apexora/shared';
+import { GUIDES } from '@driftora/shared';
 import { Top, useApp } from '@/components/App';
 
 export default function Guides() {

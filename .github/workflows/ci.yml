@@ -11,7 +11,7 @@ jobs:
       - run: npm run build:shared
       - run: npm test
         env: { RATES_OFFLINE: '1' }
-      - run: npm run build -w @apexora/web
+      - run: npm run build -w @driftora/web
       - name: Mobile type-check
         working-directory: apps/mobile
         run: npm ci && npx tsc --noEmit

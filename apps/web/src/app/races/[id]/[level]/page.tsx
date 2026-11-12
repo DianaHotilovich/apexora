@@ -1,4 +1,4 @@
-import { RACES } from '@apexora/shared';
+import { RACES } from '@driftora/shared';
 import PackageView from './PackageView';
 
 export function generateStaticParams() {

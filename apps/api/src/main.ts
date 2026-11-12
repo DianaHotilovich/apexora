@@ -5,7 +5,7 @@ async function main() {
   const port = Number(process.env.PORT || 4000);
   await app.listen(port);
   // eslint-disable-next-line no-console
-  console.log(`Apexora API on http://localhost:${port}/api`);
+  console.log(`Driftora API on http://localhost:${port}/api`);
 }
 
 main();

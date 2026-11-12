@@ -2,13 +2,13 @@
 services:
   db:
     image: postgres:16-alpine
-    environment: { POSTGRES_USER: apexora, POSTGRES_PASSWORD: apexora, POSTGRES_DB: apexora }
+    environment: { POSTGRES_USER: driftora, POSTGRES_PASSWORD: driftora, POSTGRES_DB: driftora }
     volumes: [db:/var/lib/postgresql/data]
-    healthcheck: { test: ["CMD-SHELL", "pg_isready -U apexora"], interval: 3s, retries: 20 }
+    healthcheck: { test: ["CMD-SHELL", "pg_isready -U driftora"], interval: 3s, retries: 20 }
   api:
     build: { context: ., dockerfile: apps/api/Dockerfile }
     environment:
-      DATABASE_URL: postgres://apexora:apexora@db:5432/apexora
+      DATABASE_URL: postgres://driftora:driftora@db:5432/driftora
       CORS_ORIGIN: http://localhost:3000
       ADYEN_API_KEY: ${ADYEN_API_KEY:-}
       ADYEN_MERCHANT_ACCOUNT: ${ADYEN_MERCHANT_ACCOUNT:-}

@@ -26,8 +26,9 @@ describe('data', () => {
 
 describe('money', () => {
   it('converts through EUR', () => {
-    expect(convert(100, 'EUR', 'PLN', RATES_SNAPSHOT)).toBeCloseTo(440.38, 2);
-    expect(convert(440.38, 'PLN', 'EUR', RATES_SNAPSHOT)).toBeCloseTo(100, 2);
+    const pln = RATES_SNAPSHOT.rates.PLN;
+    expect(convert(100, 'EUR', 'PLN', RATES_SNAPSHOT)).toBeCloseTo(100 * pln, 2);
+    expect(convert(100 * pln, 'PLN', 'EUR', RATES_SNAPSHOT)).toBeCloseTo(100, 2);
   });
   it('throws for unknown currencies', () => {
     expect(() => convert(1, 'XXX', 'PLN', RATES_SNAPSHOT)).toThrow(MissingRateError);
@@ -46,7 +47,7 @@ describe('trip', () => {
     const s = summarizeTrip([{ offerId: 'hu-ticket-fan', quantity: 1 }, { offerId: 'hu-pkg-standard', quantity: 1 }], 'PLN', RATES_SNAPSHOT);
     expect(Math.round(s.total)).toBe(4040);
     expect(s.missing).toEqual([]);
-    expect(s.totalEur).toBeCloseTo(4040 / 4.4038, 1);
+    expect(s.totalEur).toBeCloseTo(4040 / RATES_SNAPSHOT.rates.PLN, 1);
   });
   it('reports missing parts', () => {
     const s = summarizeTrip([{ offerId: 'cn-ticket-ga', quantity: 1 }], 'PLN', RATES_SNAPSHOT);

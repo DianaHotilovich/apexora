@@ -1,4 +1,4 @@
-import { RACES } from '@apexora/shared';
+import { RACES } from '@driftora/shared';
 import LevelChoice from './LevelChoice';
 
 export function generateStaticParams() {

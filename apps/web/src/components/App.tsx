@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { createContext, ReactNode, useContext, useEffect, useState } from 'react';
-import { convert, formatMoney, hasRate, Lang, Rates, RATES_SNAPSHOT, USER_CURRENCIES } from '@apexora/shared';
+import { convert, formatMoney, hasRate, Lang, Rates, RATES_SNAPSHOT, USER_CURRENCIES } from '@driftora/shared';
 import { DICT, Dict } from '@/lib/i18n';
 import { rates as loadRates } from '@/lib/data';
 import { load, save } from '@/lib/store';
@@ -89,7 +89,7 @@ export function Top({ back, label }: { back?: string; label?: string }) {
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path d="M15 18l-6-6 6-6" /></svg>
         </Link>
       ) : (
-        <Link href="/" className="logo">Apex<span>ora</span></Link>
+        <Link href="/" className="logo">Drift<span>ora</span></Link>
       )}
       {label && <div className="muted small strong">{label}</div>}
       <Settings />

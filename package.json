@@ -1,15 +1,15 @@
 {
-  "name": "apexora",
+  "name": "driftora",
   "private": true,
   "version": "1.0.0",
-  "description": "Apexora – plan a whole Formula 1 Grand Prix trip in one place",
+  "description": "Driftora – plan a whole Formula 1 Grand Prix trip in one place",
   "workspaces": ["packages/shared", "apps/api", "apps/web"],
   "scripts": {
-    "build:shared": "npm run build -w @apexora/shared",
-    "test": "npm run test -w @apexora/shared && npm run test -w @apexora/api",
-    "dev:api": "npm run start:dev -w @apexora/api",
-    "dev:web": "npm run dev -w @apexora/web",
-    "build": "npm run build -w @apexora/shared && npm run build -w @apexora/api && npm run build -w @apexora/web"
+    "build:shared": "npm run build -w @driftora/shared",
+    "test": "npm run test -w @driftora/shared && npm run test -w @driftora/api",
+    "dev:api": "npm run start:dev -w @driftora/api",
+    "dev:web": "npm run dev -w @driftora/web",
+    "build": "npm run build -w @driftora/shared && npm run build -w @driftora/api && npm run build -w @driftora/web"
   },
   "engines": { "node": ">=20" }
 }

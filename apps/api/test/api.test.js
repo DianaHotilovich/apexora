@@ -1,4 +1,5 @@
 process.env.NODE_ENV = 'test';
+const { RATES_SNAPSHOT } = require('@driftora/shared');
 process.env.RATES_OFFLINE = '1';
 
 const { test, before, after } = require('node:test');
@@ -47,14 +48,14 @@ test('guides and country checklist', async () => {
 test('rates fall back to the offline snapshot', async () => {
   const r = await request(http).get('/api/rates').expect(200);
   assert.equal(r.body.live, false);
-  assert.equal(r.body.rates.PLN, 4.4038);
+  assert.equal(r.body.rates.PLN, RATES_SNAPSHOT.rates.PLN);
 });
 
 test('suggests and quotes the standard Hungarian GP trip', async () => {
   const s = await request(http).post('/api/trips/suggest').send({ raceId: 'hungary-2027', level: 'standard', currency: 'PLN' }).expect(200);
   assert.equal(Math.round(s.body.summary.total), 4040);
   const q = await request(http).post('/api/trips/quote').send({ items: [{ offerId: 'hu-ticket-fan', quantity: 2 }], currency: 'EUR' }).expect(200);
-  assert.ok(Math.abs(q.body.total - 3100 / 4.4038) < 0.01);
+  assert.ok(Math.abs(q.body.total - 3100 / RATES_SNAPSHOT.rates.PLN) < 0.01);
   await request(http).post('/api/trips/quote').send({ items: [], currency: 'PLN' }).expect(400);
 });
 

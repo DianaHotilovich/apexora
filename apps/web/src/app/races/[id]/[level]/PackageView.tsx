@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { getGuide, Level, summarizeTrip, TripItem } from '@apexora/shared';
+import { getGuide, Level, summarizeTrip, TripItem } from '@driftora/shared';
 import { Money, Top, useApp } from '@/components/App';
 import { offers, race, suggest } from '@/lib/data';
 import { StaySearch } from '@/components/StaySearch';

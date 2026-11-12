@@ -1,5 +1,5 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { Rates, RATES_SNAPSHOT } from '@apexora/shared';
+import { Rates, RATES_SNAPSHOT } from '@driftora/shared';
 
 const SIX_HOURS = 6 * 60 * 60 * 1000;
 

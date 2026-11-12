@@ -1,4 +1,4 @@
-// End-to-end smoke test of the main user flow. Usage: npm run build && npm run test:e2e -w @apexora/web
+// End-to-end smoke test of the main user flow. Usage: npm run build && npm run test:e2e -w @driftora/web
 // Serves ./out on a free port, walks race -> level -> package -> pay -> checklist -> SOS, fails on any page error.
 import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';

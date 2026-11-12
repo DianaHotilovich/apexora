@@ -1,17 +1,17 @@
 {
   "expo": {
-    "name": "Apexora",
-    "slug": "apexora",
+    "name": "Driftora",
+    "slug": "driftora",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "backgroundColor": "#12172B",
     "ios": {
-      "bundleIdentifier": "app.apexora",
+      "bundleIdentifier": "app.driftora",
       "supportsTablet": false
     },
     "android": {
-      "package": "app.apexora",
+      "package": "app.driftora",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#13233F"

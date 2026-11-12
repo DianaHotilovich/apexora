@@ -1,4 +1,4 @@
-import { GUIDES } from '@apexora/shared';
+import { GUIDES } from '@driftora/shared';
 import GuideView from './GuideView';
 
 export function generateStaticParams() {

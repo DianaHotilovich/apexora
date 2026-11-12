@@ -1,5 +1,5 @@
 {
-  "name": "@apexora/api",
+  "name": "@driftora/api",
   "version": "1.0.0",
   "private": true,
   "main": "dist/main.js",
@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.2.17",
-    "@apexora/shared": "1.0.0",
+    "@driftora/shared": "1.0.0",
     "@nestjs/common": "^10.4.15",
     "@nestjs/core": "^10.4.15",
     "@nestjs/platform-express": "^10.4.15",

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { daysUntil } from '@apexora/shared';
+import { daysUntil } from '@driftora/shared';
 import { Top, useApp } from '@/components/App';
 import { checklist, race, SavedTrip } from '@/lib/data';
 import { load, save } from '@/lib/store';

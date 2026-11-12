@@ -1,6 +1,6 @@
 import { PaymentMethod } from './types';
 
-/** Instalment (BNPL) partners by country, from the Apexora partner research (October 2026). */
+/** Instalment (BNPL) partners by country, from the Driftora partner research (October 2026). */
 export const BNPL_BY_COUNTRY: Record<string, string[]> = {
   PL: ['PayPo', 'Klarna'], AT: ['Klarna'], BE: ['Klarna'], CZ: ['Klarna'], DK: ['Klarna'], FI: ['Klarna'],
   FR: ['Klarna', 'PayPal Pay Later'], GR: ['Klarna'], ES: ['Klarna', 'PayPal Pay Later'], NL: ['Klarna'], IE: ['Klarna'],

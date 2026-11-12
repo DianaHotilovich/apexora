@@ -1,4 +1,4 @@
-import { GUIDES } from '@apexora/shared';
+import { GUIDES } from '@driftora/shared';
 import SosView from './SosView';
 
 export function generateStaticParams() {

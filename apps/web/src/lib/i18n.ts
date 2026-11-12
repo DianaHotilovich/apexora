@@ -1,2 +1,2 @@
-export { DICT } from '@apexora/shared';
-export type { Dict } from '@apexora/shared';
+export { DICT } from '@driftora/shared';
+export type { Dict } from '@driftora/shared';
